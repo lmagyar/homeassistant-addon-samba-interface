@@ -48,6 +48,11 @@ Add-on configuration:
 workgroup: WORKGROUP
 username: homeassistant
 password: YOUR_PASSWORD
+interfaces:
+  - eth0
+  - wlan0
+  - docker0
+  - lo
 allow_hosts:
   - 10.0.0.0/8
   - 172.16.0.0/12
@@ -71,6 +76,18 @@ The username you would like to use to authenticate with the Samba server.
 ### Option: `password` (required)
 
 The password that goes with the username configured for authentication.
+
+### Option: `interfaces` (optional)
+
+The network interfaces Samba should listen on for incoming connections.
+
+- This option should only be used in advanced cases. In general, setting this option is not needed.
+
+- If omitted, Samba will listen on the default primary interface of Home Assistant (see `> ha network info`).
+
+- For other possible interfaces see `> ip link show`.
+
+**Note:** Samba needs at least one non-loopback, non-ipv6, local interface to listen on and become browser on it. Without it, it works, but reloads it's interfaces in an infinite loop forever in each 10 seconds to check, whether a non-loopback, non-ipv6, local interface is added. This reload will fill the log file with infinite number of entries like `added interface lo ip=::1 bcast= netmask=ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff`.
 
 ### Option: `allow_hosts` (required)
 
