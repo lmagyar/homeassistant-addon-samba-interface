@@ -1,8 +1,8 @@
 version: 9.5.1
 slug: samba
-name: Samba share
+name: Samba share - with interfaces configuration
 description: Expose Home Assistant folders with SMB/CIFS
-url: https://github.com/home-assistant/hassio-addons/tree/master/samba
+url: https://github.com/lmagyar/homeassistant-addon-samba-interface
 arch:
   - armhf
   - armv7
@@ -11,7 +11,7 @@ arch:
   - i386
 hassio_api: true
 host_network: true
-image: homeassistant/{arch}-addon-samba
+image: lmagyar/{arch}-addon-samba-interface
 init: false
 map:
   - config:rw

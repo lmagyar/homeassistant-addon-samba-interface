@@ -1,0 +1,20 @@
+name: 'Test'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Test build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v2.4.0
+    - name: Test build
+      uses: home-assistant/builder@2021.12.0
+      with:
+        args: |
+          --test \
+          --all \
+          --target samba \
+          --docker-hub ${{ secrets.DOCKERHUB_USERNAME }}

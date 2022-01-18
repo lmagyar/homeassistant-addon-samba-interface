@@ -1,12 +1,21 @@
-# Home Assistant Add-on: Samba share
+# Home Assistant Add-on: Samba share - with interfaces configuration
+
+![Warning][warning_stripe]
+
+> This is a **fork** of the [official add-on][official_addon]! This restores the possibility to specify `interfaces` in the configuration.
+>
+> Updates are released when the official add-on changes (changes are merged).
+
+![Warning][warning_stripe]
 
 ## Installation
 
 Follow these steps to get the add-on installed on your system:
 
 1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.
-2. Find the "Samba share" add-on and click it.
-3. Click on the "INSTALL" button.
+2. Click **Repositories** in the **...** menu at the top right corner, add `https://github.com/lmagyar/homeassistant-addon-samba-interface` as repository.
+3. Find the "Samba share - with interface configuration" add-on and click it. If it doesn't show up, wait until HA refreshes the information about the add-on, or click **Reload** in the **...** menu at the top right corner.
+4. Click on the "INSTALL" button.
 
 ## How to use
 
@@ -99,3 +108,5 @@ In case you've found a bug, please [open an issue on our GitHub][issue].
 [issue]: https://github.com/home-assistant/hassio-addons/issues
 [reddit]: https://reddit.com/r/homeassistant
 [repository]: https://github.com/hassio-addons/repository
+[warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/samba/warning_stripe_wide.png
+[official_addon]: https://github.com/home-assistant/addons/tree/master/samba
