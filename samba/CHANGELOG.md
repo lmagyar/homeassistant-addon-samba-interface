@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.6.0.1 (forked)
+
+- Run on all supported interfaces, no config available
+
 ## 9.6.0 (forked)
 
 - Extend required interface option to optional interfaces list
