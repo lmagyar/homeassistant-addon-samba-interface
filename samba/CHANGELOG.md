@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.6.0.2 (forked)
+
+- Restore optional interfaces list, by default run on all supported interfaces
+
 ## 9.6.0.1 (forked)
 
 - Run on all supported interfaces, no config available
