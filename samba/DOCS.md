@@ -82,9 +82,9 @@ The network interfaces Samba should listen on for incoming connections.
 
 - This option should only be used in advanced cases. In general, setting this option is not needed.
 
-- If omitted, Samba will listen on the default primary interface of Home Assistant (see `> ha network info`).
+- If omitted, Samba will listen on all supported interfaces of Home Assistant (see `> ha network info`).
 
-- For other possible interfaces see `> ip link show`.
+- For other possible interfaces see `> ifconfig` or `> ip link show`.
 
 **Note:** Samba needs at least one non-loopback, non-ipv6, local interface to listen on and become browser on it. Without it, it works, but reloads it's interfaces in an infinite loop forever in each 10 seconds to check, whether a non-loopback, non-ipv6, local interface is added. This reload will fill the log file with infinite number of entries like `added interface lo ip=::1 bcast= netmask=ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff`.
 
