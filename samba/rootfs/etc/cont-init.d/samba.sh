@@ -4,6 +4,7 @@
 # ==============================================================================
 declare password
 declare username
+declare -a interfaces
 export HOSTNAME
 
 # Check Login data
@@ -19,25 +20,26 @@ if bashio::var.is_empty "${HOSTNAME}"; then
 fi
 bashio::log.info "Hostname: ${HOSTNAME}"
 
-# Generate Samba configuration.
+# Determine interfaces list
 if bashio::config.exists 'interfaces'; then
     # Configuration exists, use configured values
-    bashio::log.info "Interfaces: $(printf '%s ' $(bashio::config 'interfaces'))"
-    tempio \
-      -conf /data/options.json \
+    for interface in $(bashio::config 'interfaces'); do
+        interfaces+=("${interface}")
+    done
+else
+    # Configuration doesn't exist, default to the official add-on: Get supported interfaces
+    for interface in $(bashio::network.interfaces); do
+        interfaces+=("${interface}")
+    done
+    interfaces+=("lo")
+fi
+bashio::log.info "Interfaces: $(printf '%s ' "${interfaces[@]}")"
+
+# Generate Samba configuration.
+jq ".interfaces = $(jq -c -n '$ARGS.positional' --args -- "${interfaces[@]}")" /data/options.json \
+    | tempio \
       -template /usr/share/tempio/smb.gtpl \
       -out /etc/samba/smb.conf
-else
-    # Configuration doesn't exist, default to the official add-on, get supported interfaces from supervisor
-    declare -a interfaces
-    interfaces+=$(bashio::network.interfaces)
-    interfaces+=("lo")
-    bashio::log.info "Interfaces: $(printf '%s ' ${interfaces[@]})"
-    jq ".interfaces = $(jq -c -n '$ARGS.positional' --args -- ${interfaces[@]})" /data/options.json \
-        | tempio \
-          -template /usr/share/tempio/smb.gtpl \
-          -out /etc/samba/smb.conf
-fi
 
 # Init user
 username=$(bashio::config 'username')
