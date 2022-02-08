@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.6.0.3 (forked)
+
+- Fix ShellCheck errors
+
 ## 9.6.0.2 (forked)
 
 - Restore optional interfaces list, by default run on all supported interfaces
@@ -8,10 +12,14 @@
 
 - Run on all supported interfaces, no config available
 
-## 9.6.0 (forked)
+## 9.6.0.0 (forked)
 
 - Extend required interface option to optional interfaces list
 - Restore interface options
+
+## 9.6.0
+
+- Run on all supported interfaces
 
 ## 9.5.1
 
