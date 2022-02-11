@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Samba share - with interfaces configuration
+# Home Assistant Custom Add-on: Samba share - with interfaces configuration
 
 ![Warning][warning_stripe]
 

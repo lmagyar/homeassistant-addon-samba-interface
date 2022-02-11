@@ -1,4 +1,4 @@
 
-name: Samba share - with interfaces configuration
+name: Samba share - with interfaces configuration add-on
 url: https://github.com/lmagyar/homeassistant-addon-samba-interface
 maintainer: "@lmagyar"

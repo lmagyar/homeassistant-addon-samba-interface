@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Samba share - with interfaces configuration
+# Home Assistant Custom Add-on: Samba share - with interfaces configuration
 
 ![Warning][warning_stripe]
 
@@ -117,11 +117,12 @@ You have several options to get them answered:
 - The Home Assistant [Community Forum][forum].
 - Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
 
-In case you've found a bug, please [open an issue on our GitHub][issue].
+In case you've found a bug, please open an issue on our GitHub: [issue with the official add-on][issue] or [issue with with interfaces configuration][issue_forked]
 
 [discord]: https://discord.gg/c5DvZ4e
 [forum]: https://community.home-assistant.io
 [issue]: https://github.com/home-assistant/hassio-addons/issues
+[issue_forked]: https://github.com/lmagyar/homeassistant-addon-samba-interface/issues
 [reddit]: https://reddit.com/r/homeassistant
 [repository]: https://github.com/hassio-addons/repository
 [warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/samba/warning_stripe_wide.png
