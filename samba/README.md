@@ -37,7 +37,7 @@ It lets you access your config files with Windows and macOS devices.
 [github-actions-shield]: https://github.com/lmagyar/homeassistant-addon-samba-interface/workflows/Publish/badge.svg
 [github-actions]: https://github.com/lmagyar/homeassistant-addon-samba-interface/actions
 [license-shield]: https://img.shields.io/github/license/lmagyar/homeassistant-addon-samba-interface.svg
-[licence]: https://github.com/lmagyar/homeassistant-addon-samba-interface/blob/main/LICENSE
+[licence]: https://github.com/lmagyar/homeassistant-addon-samba-interface/blob/master/LICENSE
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-custom-orange.svg
 [releases-shield]: https://img.shields.io/github/tag/lmagyar/homeassistant-addon-samba-interface.svg
