@@ -9,6 +9,8 @@
 Share your configuration over the network using Windows file sharing.
 
 [![GitHub Release][releases-shield]][releases]
+[![Last Updated][updated-shield]][updated]
+![Reported Installations][installations-shield]
 ![Project Stage][project-stage-shield]
 [![License][license-shield]][licence]
 
@@ -36,11 +38,14 @@ It lets you access your config files with Windows and macOS devices.
 [commits]: https://github.com/lmagyar/homeassistant-addon-samba-interface/commits/master
 [github-actions-shield]: https://github.com/lmagyar/homeassistant-addon-samba-interface/workflows/Publish/badge.svg
 [github-actions]: https://github.com/lmagyar/homeassistant-addon-samba-interface/actions
+[installations-shield]: https://img.shields.io/badge/dynamic/json?label=reported%20installations&query=$[%27ba124dcc_samba%27].total&url=https%3A%2F%2Fanalytics.home-assistant.io%2Faddons.json
 [license-shield]: https://img.shields.io/github/license/lmagyar/homeassistant-addon-samba-interface.svg
 [licence]: https://github.com/lmagyar/homeassistant-addon-samba-interface/blob/master/LICENSE
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-custom-orange.svg
-[releases-shield]: https://img.shields.io/github/tag/lmagyar/homeassistant-addon-samba-interface.svg
+[releases-shield]: https://img.shields.io/github/tag/lmagyar/homeassistant-addon-samba-interface.svg?label=release
 [releases]: https://github.com/lmagyar/homeassistant-addon-samba-interface/tags
+[updated-shield]: https://img.shields.io/github/last-commit/lmagyar/homeassistant-addon-samba-interface/master?label=updated
+[updated]: https://github.com/lmagyar/homeassistant-addon-samba-interface/commits/master
 [warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/samba/warning_stripe_wide.png
 [official_addon]: https://github.com/home-assistant/addons/tree/master/samba
