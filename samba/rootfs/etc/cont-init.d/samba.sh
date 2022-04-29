@@ -27,10 +27,16 @@ if bashio::config.exists 'interfaces'; then
         interfaces+=("${interface}")
     done
 else
-    # Configuration doesn't exist, default to the official add-on: Get supported interfaces
+    # Configuration doesn't exist, default to the official add-on
+    # Get supported interfaces
     for interface in $(bashio::network.interfaces); do
         interfaces+=("${interface}")
     done
+	# Add default interface if it is not part of the supported interfaces list
+	default_interface=$(bashio::network.name)
+	if ! printf '%s\n' "${interfaces[@]}" | grep -Fxq -- "${default_interface}"; then
+	    interfaces+=("${default_interface}")
+	fi
     interfaces+=("lo")
 fi
 bashio::log.info "Interfaces: $(printf '%s ' "${interfaces[@]}")"
