@@ -1,12 +1,17 @@
 # Changelog
 
+## 9.6.1.5 (forked)
+
+- Follows final bugfix in official v9.6.1, not as merged in v9.6.1.4
+
 ## 9.6.1.4 (forked)
 
 - Better log messages for corner cases
 
 ## 9.6.1
 
-- Run on all supported interfaces plus the default interface if it is not part of the supported interfaces list
+- Remove lo from interface list
+- ~Run on all supported interfaces plus the default interface if it is not part of the supported interfaces list~
 
 ## 9.6.0.3 (forked)
 

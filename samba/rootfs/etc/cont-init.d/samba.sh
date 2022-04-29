@@ -32,12 +32,6 @@ else
     for interface in $(bashio::network.interfaces); do
         interfaces+=("${interface}")
     done
-	# Add default interface if it is not part of the supported interfaces list
-	default_interface=$(bashio::network.name)
-	if ! printf '%s\n' "${interfaces[@]}" | grep -Fxq -- "${default_interface}"; then
-	    interfaces+=("${default_interface}")
-	fi
-    interfaces+=("lo")
 fi
 if [ ${#interfaces[@]} -eq 0 ]; then
     bashio::log.info "Interfaces: <empty list, running on all interfaces>"
