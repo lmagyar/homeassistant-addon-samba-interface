@@ -21,3 +21,6 @@ configuration:
   allow_hosts:
     name: Allowed Hosts
     description: List of hosts/networks allowed to access the shared folders.
+  interfaces:
+    name: Interfaces
+    description: Optional list of interfaces to bind on instead of the default supported interfaces.
