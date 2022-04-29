@@ -1,5 +1,5 @@
 ---
-version: 9.6.1.5
+version: 9.6.1.6
 slug: samba
 name: Samba share - with interfaces configuration
 description: Expose Home Assistant folders with SMB/CIFS

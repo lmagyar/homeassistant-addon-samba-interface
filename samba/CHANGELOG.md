@@ -1,8 +1,12 @@
 # Changelog
 
+## 9.6.1.6 (forked)
+
+- Merges final error message from official v9.6.1, not as merged in v9.6.1.5
+
 ## 9.6.1.5 (forked)
 
-- Follows final bugfix in official v9.6.1, not as merged in v9.6.1.4
+- Merges final bugfix from official v9.6.1, not as merged in v9.6.1.4
 
 ## 9.6.1.4 (forked)
 
