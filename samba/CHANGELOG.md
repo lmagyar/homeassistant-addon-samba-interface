@@ -11,6 +11,7 @@
 ## 9.6.1
 
 - Remove lo from interface list
+- Exit with error if there are no supported interfaces to run Samba on
 - ~Run on all supported interfaces plus the default interface if it is not part of the supported interfaces list~
 
 ## 9.6.0.3 (forked)

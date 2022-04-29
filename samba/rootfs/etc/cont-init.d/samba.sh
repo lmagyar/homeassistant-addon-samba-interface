@@ -32,6 +32,15 @@ else
     for interface in $(bashio::network.interfaces); do
         interfaces+=("${interface}")
     done
+    if [ ${#interfaces[@]} -eq 0 ]; then
+        bashio::log.fatal
+        bashio::log.fatal 'No supported interfaces found to bind on.'
+        bashio::log.fatal
+        bashio::log.fatal 'Please use the optional interfaces: configuration option'
+        bashio::log.fatal 'to specify the interfaces Samba should bind to.'
+        bashio::log.fatal
+        bashio::exit.nok
+    fi
 fi
 if [ ${#interfaces[@]} -eq 0 ]; then
     bashio::log.info "Interfaces: <empty list, running on all interfaces>"
