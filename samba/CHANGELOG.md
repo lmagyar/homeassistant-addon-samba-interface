@@ -1,9 +1,12 @@
 # Changelog
 
-## 9.6.1.4
+## 9.6.1.4 (forked)
+
+- Better log messages for corner cases
+
+## 9.6.1
 
 - Run on all supported interfaces plus the default interface if it is not part of the supported interfaces list
-- Better log messages for corner cases
 
 ## 9.6.0.3 (forked)
 
