@@ -4,7 +4,7 @@
 # ==============================================================================
 declare password
 declare username
-declare -a interfaces
+declare -a interfaces=()
 export HOSTNAME
 
 # Check Login data
@@ -39,7 +39,11 @@ else
 	fi
     interfaces+=("lo")
 fi
-bashio::log.info "Interfaces: $(printf '%s ' "${interfaces[@]}")"
+if [ ${#interfaces[@]} -eq 0 ]; then
+    bashio::log.info "Interfaces: <empty list, running on all interfaces>"
+else
+    bashio::log.info "Interfaces: $(printf '%s ' "${interfaces[@]}")"
+fi
 
 # Generate Samba configuration.
 jq ".interfaces = $(jq -c -n '$ARGS.positional' --args -- "${interfaces[@]}")" /data/options.json \
