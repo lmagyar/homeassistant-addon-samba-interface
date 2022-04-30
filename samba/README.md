@@ -3,6 +3,20 @@
 ![Warning][warning_stripe]
 
 > This is a **fork** of the [official add-on][official_addon]! This restores the possibility to specify `interfaces` in the configuration.
+>
+> Updates are released when the official add-on changes (changes are merged).
+
+> **Note:** Please use `interfaces`, the plural form, with an _**S**_ at the end.
+>
+> The official add-on in the past used a plain string and we were able to add multiple interfaces separated with a space, but this forked version uses a string list, because this is the way how we should specify multiple items, ie. a list, like `veto_files` and `allow_hosts`.
+>
+> So the correct form is:
+>
+> ```
+> interfaces:
+>  - eth0
+>  - wlan0
+> ```
 
 ![Warning][warning_stripe]
 
