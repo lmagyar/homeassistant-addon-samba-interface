@@ -2,8 +2,8 @@
 
 ## 9.6.1.7 (forked)
 
-- Add by default an empty list to the interfaces: configuration option, will run on all interfaces by default
-- In case of empty list specified, list possible interface values as warning
+- Add by default an empty list to the `interfaces:` configuration option, will run on all interfaces by default
+- In case of an empty list specified, list possible interface values as warning in the log
 
 ## 9.6.1.6 (forked)
 
