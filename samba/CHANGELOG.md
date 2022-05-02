@@ -1,5 +1,10 @@
 # Changelog
 
+## 9.6.1.7 (forked)
+
+- Add by default an empty list to the interfaces: configuration option, will run on all interfaces by default
+- In case of empty list specified, list possible interface values as warning
+
 ## 9.6.1.6 (forked)
 
 - Merges final error message from official v9.6.1, not as merged in v9.6.1.5
