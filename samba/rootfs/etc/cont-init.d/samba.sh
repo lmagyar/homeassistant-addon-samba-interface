@@ -39,11 +39,20 @@ else
         bashio::log.fatal 'Please use the optional interfaces: configuration option'
         bashio::log.fatal 'to specify the interfaces Samba should bind to.'
         bashio::log.fatal
+        bashio::log.fatal 'Configuring an empty list for the interfaces: configuration'
+        bashio::log.fatal 'option (eg. interfaces: []) Samba will bind to all interfaces'
+        bashio::log.fatal 'and log the possible values.'
+        bashio::log.fatal
         bashio::exit.nok
     fi
 fi
 if [ ${#interfaces[@]} -eq 0 ]; then
     bashio::log.info "Interfaces: <empty list, running on all interfaces>"
+    bashio::log.warning "Possible values for the interfaces: configuration option are"
+    bashio::log.warning "  interfaces:"
+    ifconfig | grep -o '^\w*' | grep -v -E '^veth|docker|hassio'| while read -r line ; do
+        bashio::log.warning "    - ${line}"
+    done
 else
     bashio::log.info "Interfaces: $(printf '%s ' "${interfaces[@]}")"
 fi
