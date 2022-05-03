@@ -23,4 +23,6 @@ configuration:
     description: List of hosts/networks allowed to access the shared folders.
   interfaces:
     name: Interfaces
-    description: Optional list of interfaces to bind on instead of the default supported interfaces.
+    description: >-
+      Optional list of interfaces to bind on instead of the default supported interfaces.
+      In case of an empty list, Samba will run on all interfaces.
