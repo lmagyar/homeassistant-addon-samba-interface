@@ -50,7 +50,7 @@ if [ ${#interfaces[@]} -eq 0 ]; then
     bashio::log.info "Interfaces: <empty list, running on all interfaces>"
     bashio::log.warning "Possible values for the interfaces: configuration option are"
     bashio::log.warning "  interfaces:"
-    ifconfig | grep -o '^\w*' | grep -v -E '^veth|docker|hassio'| while read -r line ; do
+    ifconfig | grep -Eo '^\w+' | grep -Ev '^veth|^docker|^hassio' | while read -r line ; do
         bashio::log.warning "    - ${line}"
     done
 else
