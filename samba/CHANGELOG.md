@@ -3,6 +3,7 @@
 ## 9.6.1.vNext (forked)
 
 - Bump alpine base image from 3.13 to 3.15
+- Fix finish script for S6-overlay v3
 
 ## 9.6.1.7 (forked)
 
