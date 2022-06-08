@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.6.1.vNext (forked)
+
+- Bump alpine base image from 3.13 to 3.15
+
 ## 9.6.1.7 (forked)
 
 - Add by default an empty list to the `interfaces:` configuration option, will run on all interfaces by default
