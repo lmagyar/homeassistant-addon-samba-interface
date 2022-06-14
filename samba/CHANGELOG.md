@@ -1,9 +1,13 @@
 # Changelog
 
-## 9.6.1.vNext (forked)
+## 9.7.0.0 (forked)
 
-- Bump alpine base image from 3.13 to 3.15
-- Fix finish script for S6-overlay v3
+- Merge upstream changes
+
+## 9.7.0
+
+- Upgrade Alpine Linux to 3.15
+- Sign add-on with Codenotary Community Attestation Service (CAS)
 
 ## 9.6.1.7 (forked)
 
