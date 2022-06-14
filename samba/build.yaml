@@ -5,3 +5,6 @@ build_from:
   armhf: ghcr.io/home-assistant/armhf-base:3.15
   armv7: ghcr.io/home-assistant/armv7-base:3.15
   i386: ghcr.io/home-assistant/i386-base:3.15
+codenotary:
+  signer: lmagyar1973@gmail.com
+  base_image: notary@home-assistant.io

@@ -18,3 +18,5 @@ jobs:
           --all \
           --target samba \
           --docker-hub ${{ secrets.DOCKERHUB_USERNAME }}
+      env:
+        CAS_API_KEY: ${{ secrets.CAS_TOKEN }}
