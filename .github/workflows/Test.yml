@@ -45,6 +45,5 @@ jobs:
           --test \
           --target ${{ matrix.addon }} \
           --no-cache
-          --docker-hub ${{ secrets.DOCKERHUB_USERNAME }}
       env:
         CAS_API_KEY: ${{ secrets.CAS_TOKEN }}
