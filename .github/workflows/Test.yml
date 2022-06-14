@@ -19,7 +19,6 @@ jobs:
         args: |
           --test \
           --${{ matrix.arch }} \
-          --target samba \
-          --no-cache
+          --target samba
       env:
         CAS_API_KEY: ${{ secrets.CAS_TOKEN }}
