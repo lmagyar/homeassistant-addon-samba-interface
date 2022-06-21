@@ -6,6 +6,8 @@
 >
 > Updates are released when the official add-on changes (changes are merged).
 
+> By default, the configuration is `interfaces: []`, so Samba will run on all interfaces and list possible interface values as warning in the log.
+
 > **Note:** Please use `interfaces`, the plural form, with an _**S**_ at the end.
 >
 > The official add-on in the past used a plain string and we were able to add multiple interfaces separated with a space, but this forked version uses a string list, because this is the way how we should specify multiple items, ie. a list, like `veto_files` and `allow_hosts`.
@@ -17,8 +19,6 @@
 >  - eth0
 >  - wlan0
 > ```
-> 
-> By default, the configuration is `interfaces: []`, so Samba will run on all interfaces and list possible interface values as warning in the log.
 
 ![Warning][warning_stripe]
 
