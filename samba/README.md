@@ -5,6 +5,8 @@
 > This is a **fork** of the [official add-on][official_addon]! This restores the possibility to specify `interfaces` in the configuration.
 >
 > Updates are released when the official add-on changes (changes are merged).
+>
+> By default, the configuration is `interfaces: []`, so Samba will run on all interfaces and list possible interface values as warning in the log.
 
 > **Note:** Please use `interfaces`, the plural form, with an _**S**_ at the end.
 >
