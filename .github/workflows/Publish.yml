@@ -7,18 +7,24 @@ jobs:
   publish:
     name: Publish
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arch: ["aarch64", "amd64", "armhf", "armv7", "i386"]
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v3
     - name: Login to DockerHub
-      uses: docker/login-action@v1.14.1
+      uses: docker/login-action@v2.0.0
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Publish
-      uses: home-assistant/builder@2022.03.1
+      uses: home-assistant/builder@2022.06.1
       with:
         args: |
-          --all \
+          --no-cache \
+          --${{ matrix.arch }} \
           --target samba \
           --docker-hub ${{ secrets.DOCKERHUB_USERNAME }}
+      env:
+        CAS_API_KEY: ${{ secrets.CAS_TOKEN }}

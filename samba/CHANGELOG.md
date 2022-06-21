@@ -1,5 +1,14 @@
 # Changelog
 
+## 9.7.0.0 (forked)
+
+- Merge upstream changes
+
+## 9.7.0
+
+- Upgrade Alpine Linux to 3.15
+- Sign add-on with Codenotary Community Attestation Service (CAS)
+
 ## 9.6.1.7 (forked)
 
 - Add by default an empty list to the `interfaces:` configuration option, will run on all interfaces by default

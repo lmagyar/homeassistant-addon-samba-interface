@@ -1,9 +1,10 @@
 ---
-version: 9.6.1.7
+version: 9.7.0.0
 slug: samba
 name: Samba share - with interfaces configuration
 description: Expose Home Assistant folders with SMB/CIFS
 url: https://github.com/lmagyar/homeassistant-addon-samba-interface
+codenotary: lmagyar1973@gmail.com
 arch:
   - armhf
   - armv7
