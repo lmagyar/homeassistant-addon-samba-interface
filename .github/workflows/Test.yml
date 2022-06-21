@@ -18,6 +18,7 @@ jobs:
       with:
         args: |
           --test \
+          --no-cache \
           --${{ matrix.arch }} \
           --target samba
       env:
