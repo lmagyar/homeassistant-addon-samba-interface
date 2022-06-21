@@ -17,6 +17,8 @@
 >  - eth0
 >  - wlan0
 > ```
+> 
+> By default, the configuration is `interfaces: []`, so Samba will run on all interfaces and list possible interface values as warning in the log.
 
 ![Warning][warning_stripe]
 
@@ -96,7 +98,7 @@ The network interfaces Samba should listen on for incoming connections.
 
 - If omitted, it is backward compatible with the official add-on: Samba will listen on all supported interfaces of Home Assistant (see `> ha network info`), but if there are no supported interfaces, Samba will exit with an error.
 
-- In case of an empty list (`interfaces: []`) Samba will run on all interfaces.
+- In case of an empty list (`interfaces: []`, this is the default) Samba will run on all interfaces and list possible interface values as warning in the log.
 
 - For possible interfaces see `> ifconfig` or `> ip link show`.
 

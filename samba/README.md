@@ -17,6 +17,8 @@
 >  - eth0
 >  - wlan0
 > ```
+> 
+> By default, the configuration is `interfaces: []`, so Samba will run on all interfaces and list possible interface values as warning in the log.
 
 ![Warning][warning_stripe]
 
