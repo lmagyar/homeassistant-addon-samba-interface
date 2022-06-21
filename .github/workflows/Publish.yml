@@ -22,7 +22,6 @@ jobs:
       uses: home-assistant/builder@2022.06.1
       with:
         args: |
-          --no-cache \
           --${{ matrix.arch }} \
           --target samba \
           --docker-hub ${{ secrets.DOCKERHUB_USERNAME }}
