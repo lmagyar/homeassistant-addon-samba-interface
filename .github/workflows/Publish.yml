@@ -19,10 +19,9 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Publish
-      uses: home-assistant/builder@2022.06.1
+      uses: home-assistant/builder@2022.06.2
       with:
         args: |
-          --no-cache \
           --${{ matrix.arch }} \
           --target samba \
           --docker-hub ${{ secrets.DOCKERHUB_USERNAME }}

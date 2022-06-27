@@ -141,5 +141,5 @@ In case you've found a bug, please open an issue on our GitHub: [issue with the 
 [issue_forked]: https://github.com/lmagyar/homeassistant-addon-samba-interface/issues
 [reddit]: https://reddit.com/r/homeassistant
 [repository]: https://github.com/hassio-addons/repository
-[warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/samba/warning_stripe_wide.png
+[warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/images/warning_stripe_wide.png
 [official_addon]: https://github.com/home-assistant/addons/tree/master/samba
