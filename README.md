@@ -1,7 +1,7 @@
 
 ## Installation
 
-In Home Assistant **Supervisor** menu, select **Add-on Store** tab, click **Repositories** in the **...** menu at the top right corner, add `https://github.com/lmagyar/homeassistant-addon-samba-interface` as repository.
+Navigate in your Home Assistant frontend to **Settings** -> **Add-ons** -> **Add-on Store**, in the **...** menu at the top right corner click **Repositories**, add `https://github.com/lmagyar/homeassistant-addon-samba-interface` as repository.
 
 ## Documentation
 
