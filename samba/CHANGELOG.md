@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.0.0.2 (forked)
+
+- Bump base image to 2022.11.0
+
 ## 10.0.0.1 (forked)
 
 - Bump base image to 2022.09.0
