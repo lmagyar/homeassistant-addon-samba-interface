@@ -1,4 +1,4 @@
-# Home Assistant Custom Add-on: Samba share - with interfaces configuration
+# Home Assistant Custom Add-on: Samba share with interfaces configuration
 
 ![Warning][warning_stripe]
 
@@ -16,8 +16,8 @@
 >
 > ```
 > interfaces:
->  - eth0
->  - wlan0
+>   - eth0
+>   - wlan0
 > ```
 
 ![Warning][warning_stripe]
