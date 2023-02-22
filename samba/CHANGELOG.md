@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.0.0.3 (forked)
+
+- Bump base image to 2023.02.0
+
 ## 10.0.0.2 (forked)
 
 - Bump base image to 2022.11.0
@@ -54,7 +58,7 @@ systems do not have these restrictions.
 
 - Remove lo from interface list
 - Exit with error if there are no supported interfaces to run Samba on
-- ~Run on all supported interfaces plus the default interface if it is not part of the supported interfaces list~
+- ~~Run on all supported interfaces plus the default interface if it is not part of the supported interfaces list~~
 
 ## 9.6.0.3 (forked)
 
