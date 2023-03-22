@@ -27,17 +27,17 @@
 Follow these steps to get the add-on installed on your system:
 
 1. Navigate in your Home Assistant frontend to **Settings** -> **Add-ons** -> **Add-on Store**.
-2. In the **...** menu at the top right corner click **Repositories**, add `https://github.com/lmagyar/homeassistant-addon-samba-interface` as repository.
-3. Find the "Samba share with interfaces configuration" add-on and click it. If it doesn't show up, wait until HA refreshes the information about the add-on, or click **Reload** in the **...** menu at the top right corner.
-4. Click on the "INSTALL" button.
+1. In the **...** menu at the top right corner click **Repositories**, add `https://github.com/lmagyar/homeassistant-addon-samba-interface` as repository.
+1. Find the "Samba share with interfaces configuration" add-on and click it. If it doesn't show up, wait until HA refreshes the information about the add-on, or click **Reload** in the **...** menu at the top right corner.
+1. Click on the "INSTALL" button.
 
 ## How to use
 
 1. In the configuration section, set a username and password.
    You can specify any username and password; these are not related in any way to the login credentials you use to log in to Home Assistant or to log in to the computer with which you will use Samba share.
-2. Save the configuration.
-3. Start the add-on.
-4. Check the add-on log output to see the result.
+1. Save the configuration.
+1. Start the add-on.
+1. Check the add-on log output to see the result.
 
 ## Connection
 
@@ -140,6 +140,5 @@ In case you've found a bug, please open an issue on our GitHub: [issue with the 
 [issue]: https://github.com/home-assistant/addons/issues
 [issue_forked]: https://github.com/lmagyar/homeassistant-addon-samba-interface/issues
 [reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
 [warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/images/warning_stripe_wide.png
 [official_addon]: https://github.com/home-assistant/addons/tree/master/samba
