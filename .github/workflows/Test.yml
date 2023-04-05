@@ -17,8 +17,8 @@ jobs:
       uses: home-assistant/builder@2023.03.0
       with:
         args: |
-          --test \
           --${{ matrix.arch }} \
-          --target samba
+          --target samba \
+          --test
       env:
         CAS_API_KEY: ${{ secrets.CAS_TOKEN }}

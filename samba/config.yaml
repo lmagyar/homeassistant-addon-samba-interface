@@ -13,7 +13,7 @@ arch:
   - i386
 hassio_api: true
 host_network: true
-image: lmagyar/{arch}-addon-samba-interface
+image: ghcr.io/lmagyar/{arch}-addon-samba-interface
 init: false
 map:
   - config:rw
