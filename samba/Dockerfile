@@ -1,8 +1,10 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:13.2.1
+# hadolint ignore=DL3006
+FROM ${BUILD_FROM}
 
-# Add env
-ENV LANG C.UTF-8
+# Environment variables
+ENV \
+    LANG C.UTF-8
 
 # Setup base
 RUN \
@@ -17,5 +19,5 @@ RUN \
         /var/lib/samba/registry.tdb \
         /var/lib/samba/winbindd_idmap.tdb
 
-# Copy data
+# Copy root filesystem
 COPY rootfs /
