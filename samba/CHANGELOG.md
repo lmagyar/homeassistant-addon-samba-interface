@@ -2,6 +2,7 @@
 
 ## vNext (forked)
 
+- Migrate add-on layout to S6 Overlay
 - Update Add-on base image to v13.2.1
 
 ## 10.0.0.3 (forked)
