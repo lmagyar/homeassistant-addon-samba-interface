@@ -26,3 +26,7 @@ configuration:
     description: >-
       Optional list of interfaces to bind on instead of the default supported interfaces.
       In case of an empty list, Samba will run on all interfaces.
+  log_level:
+    name: Log level
+    description: >-
+      Controls the level of log details the add-on provides.
