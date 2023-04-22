@@ -28,6 +28,9 @@
 
 ![Warning][warning_stripe]
 
+This Add-on allows you to enable file sharing across different operating systems over a network.
+It lets you access your config files with Windows and macOS devices.
+
 ## Installation
 
 Follow these steps to get the add-on installed on your system:
@@ -136,9 +139,6 @@ when you absolutely need it and understand the possible consequences.
 Defaults to `false`.
 
 ### Option: `log_level`
-
-Optionally enable Samba debug messages in the add-on's log. Turn it on only in
-case you are troubleshooting, because Samba's daemon is quite chatty.
 
 The `log_level` option controls the level of log output by the addon and can
 be changed to be more or less verbose, which might be useful when you are
