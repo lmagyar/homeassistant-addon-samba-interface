@@ -5,7 +5,7 @@
 - Make Samba log level configurable
 - In case of empty interface list use only notice log level, not warning
 - Migrate add-on layout to S6 Overlay
-- Update Add-on base image to v13.2.1
+- Update Add-on base image to v13.2.2
 
 ## 10.0.0.3 (forked)
 
