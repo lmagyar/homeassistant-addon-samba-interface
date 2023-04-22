@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [":semanticCommitsDisabled"],
   "forkProcessing": "enabled",
   "baseBranches": ["dev"],
   "rebaseWhen": "behind-base-branch",
