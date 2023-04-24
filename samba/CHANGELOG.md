@@ -7,6 +7,10 @@
 - Migrate add-on layout to S6 Overlay
 - Update Add-on base image to v13.2.2
 
+## 10.0.1
+
+- ~~Update to Alpine 3.17~~ (forked version already runs on Alpine 3.17)
+
 ## 10.0.0.3 (forked)
 
 - Bump base image to 2023.02.0
@@ -143,4 +147,3 @@ systems do not have these restrictions.
 ## 8.0.0
 
 - Fix access to /backup
-
