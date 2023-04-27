@@ -5,7 +5,8 @@
 > This is a **fork** of the [official add-on][official_addon]!
 >
 > Changes:
->   - Restores the possibility to specify `interfaces` in the configuration.
+>   - Restore the possibility to specify `interfaces` in the configuration
+>   - Make Samba log level configurable
 >
 > By default, the configuration is `interfaces: []`, so Samba will run on all
 > interfaces and list possible interface values as warning in the log.
