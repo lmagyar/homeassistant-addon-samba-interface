@@ -1,5 +1,7 @@
 # Home Assistant Custom Add-on: Samba share with features
 
+Share your configuration over the network using Windows file sharing.
+
 ![Warning][warning_stripe]
 
 > This is a **fork** of the [official add-on][official_addon]!
@@ -28,8 +30,6 @@
 > ```
 
 ![Warning][warning_stripe]
-
-Share your configuration over the network using Windows file sharing.
 
 [![GitHub Release][releases-shield]][releases]
 [![Last Updated][updated-shield]][updated]
