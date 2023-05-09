@@ -1,16 +1,25 @@
-# Home Assistant Custom Add-on: Samba share with interfaces configuration
+# Home Assistant Custom Add-on: Samba share with features
+
+Share your configuration over the network using Windows file sharing.
 
 ![Warning][warning_stripe]
 
-> This is a **fork** of the [official add-on][official_addon]! This restores the possibility to specify `interfaces` in the configuration.
+> This is a **fork** of the [official add-on][official_addon]!
 >
-> Updates are released when the official add-on changes (changes are merged).
+> Changes:
+>   - Restore the possibility to specify `interfaces` in the configuration
+>   - Make Samba log level configurable
 >
-> By default, the configuration is `interfaces: []`, so Samba will run on all interfaces and list possible interface values as warning in the log.
+> By default, the configuration is `interfaces: []`, so Samba will run on all
+> interfaces and list possible interface values as notice in the log.
 
-> **Note:** Please use `interfaces`, the plural form, with an _**S**_ at the end.
+> **Note:** Please use `interfaces`, the plural form, with an _**S**_ at the
+> end.
 >
-> The official add-on in the past used a plain string and we were able to add multiple interfaces separated with a space, but this forked version uses a string list, because this is the way how we should specify multiple items, ie. a list, like `veto_files` and `allow_hosts`.
+> The official add-on in the past used a plain string and we were able to add
+> multiple interfaces separated with a space, but this forked version uses a
+> string list, because this is the way how we should specify multiple items, ie.
+> a list, like `veto_files` and `allow_hosts`.
 >
 > So the correct form is:
 >
@@ -21,8 +30,6 @@
 > ```
 
 ![Warning][warning_stripe]
-
-Share your configuration over the network using Windows file sharing.
 
 [![GitHub Release][releases-shield]][releases]
 [![Last Updated][updated-shield]][updated]
@@ -58,7 +65,7 @@ It lets you access your config files with Windows and macOS devices.
 [license-shield]: https://img.shields.io/github/license/lmagyar/homeassistant-addon-samba-interface.svg
 [licence]: https://github.com/lmagyar/homeassistant-addon-samba-interface/blob/master/LICENSE
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-custom-orange.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-green.svg
 [releases-shield]: https://img.shields.io/github/tag/lmagyar/homeassistant-addon-samba-interface.svg?label=release
 [releases]: https://github.com/lmagyar/homeassistant-addon-samba-interface/tags
 [updated-shield]: https://img.shields.io/github/last-commit/lmagyar/homeassistant-addon-samba-interface/master?label=updated

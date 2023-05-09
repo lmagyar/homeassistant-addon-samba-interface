@@ -1,10 +1,11 @@
-#!/usr/bin/with-contenv bashio
+#!/command/with-contenv bashio
 # ==============================================================================
 # Prepare the Samba service for running
 # ==============================================================================
 declare password
 declare username
 declare -a interfaces=()
+declare log_level
 export HOSTNAME
 
 # Check Login data
@@ -47,18 +48,30 @@ else
     fi
 fi
 if [ ${#interfaces[@]} -eq 0 ]; then
-    bashio::log.info "Interfaces: <empty list, running on all interfaces>"
-    bashio::log.warning "Possible values for the interfaces: configuration option are"
-    bashio::log.warning "  interfaces:"
+    bashio::log.notice "Interfaces: <empty list, running on all interfaces>"
+    bashio::log.notice "Possible values for the interfaces configuration option are"
+    bashio::log.notice "  interfaces:"
     ifconfig | grep -Eo '^\w+' | grep -Ev '^veth|^docker|^hassio' | while read -r line ; do
-        bashio::log.warning "    - ${line}"
+        bashio::log.notice "    - ${line}"
     done
 else
     bashio::log.info "Interfaces: $(printf '%s ' "${interfaces[@]}")"
 fi
 
+# Set Samba log level
+case "${__BASHIO_LOG_LEVELS[${__BASHIO_LOG_LEVEL}],,}" in
+  trace)
+    log_level=3;;
+  debug)
+    log_level=2;;
+  info)
+    log_level=1;;
+  *)
+    log_level=0;;
+esac
+
 # Generate Samba configuration.
-jq ".interfaces = $(jq -c -n '$ARGS.positional' --args -- "${interfaces[@]}")" /data/options.json \
+jq ".interfaces = $(jq -c -n '$ARGS.positional' --args -- "${interfaces[@]}") | .log_level = ${log_level}" /data/options.json \
     | tempio \
       -template /usr/share/tempio/smb.gtpl \
       -out /etc/samba/smb.conf

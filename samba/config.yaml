@@ -1,7 +1,7 @@
 ---
-version: 10.0.0.3
+version: 10.0.1.0
 slug: samba
-name: Samba share with interfaces configuration
+name: Samba share with features
 description: Expose Home Assistant folders with SMB/CIFS
 url: https://github.com/lmagyar/homeassistant-addon-samba-interface
 codenotary: lmagyar1973@gmail.com
@@ -13,7 +13,7 @@ arch:
   - i386
 hassio_api: true
 host_network: true
-image: lmagyar/{arch}-addon-samba-interface
+image: ghcr.io/lmagyar/{arch}-addon-samba-interface
 init: false
 map:
   - config:rw
@@ -50,4 +50,5 @@ schema:
     - str
   interfaces:
     - str?
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
 startup: services

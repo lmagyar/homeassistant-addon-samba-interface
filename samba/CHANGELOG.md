@@ -1,8 +1,15 @@
 # Changelog
 
-## vNext (forked)
+## 10.0.1.0 (forked)
 
-- Update Add-on base image to v13.2.1
+- Make Samba log level configurable
+- In case of empty interface list use only notice log level, not warning
+- Migrate add-on layout to S6 Overlay
+- Update Add-on base image to v13.2.2
+
+## 10.0.1
+
+- ~~Update to Alpine 3.17~~ (forked version already runs on Alpine 3.17)
 
 ## 10.0.0.3 (forked)
 
@@ -140,4 +147,3 @@ systems do not have these restrictions.
 ## 8.0.0
 
 - Fix access to /backup
-
