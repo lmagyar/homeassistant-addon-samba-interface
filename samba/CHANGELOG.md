@@ -2,6 +2,7 @@
 
 ## vNext (forked)
 
+- Update Samba to v4.18.2-r0
 - Update Add-on base image to v14 (Update Alpine base image to v3.18.0)
 
 ## 10.0.1.0 (forked)
