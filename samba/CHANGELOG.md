@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.0.2
+
+- Enable IPv6 ULA and IPv4 link-local addresses by default
+
 ## 10.0.1.1 (forked)
 
 - Update Samba to v4.18.2-r0
