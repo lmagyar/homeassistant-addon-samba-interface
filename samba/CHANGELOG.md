@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.0.2.0 (forked)
+
+- Merge upstream changes
+
 ## 10.0.2
 
 - Enable IPv6 ULA and IPv4 link-local addresses by default
