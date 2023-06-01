@@ -1,5 +1,9 @@
 # Changelog
 
+## vNext (forked)
+
+- Update Samba to v4.18.3-r0
+
 ## 10.0.2.0 (forked)
 
 - Merge upstream changes
