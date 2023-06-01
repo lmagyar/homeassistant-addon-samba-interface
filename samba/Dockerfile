@@ -9,7 +9,7 @@ ENV \
 # Setup base
 RUN \
     apk add --no-cache \
-        samba-common-tools=4.18.2-r0 \
+        samba-common-tools=4.18.3-r0 \
         samba-server=4.18.2-r0 \
     \
     && mkdir -p /var/lib/samba \
