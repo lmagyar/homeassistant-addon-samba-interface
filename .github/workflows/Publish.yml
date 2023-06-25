@@ -30,5 +30,4 @@ jobs:
           --${{ matrix.arch }} \
           --target samba \
           --cosign \
-          --no-cache \
           --docker-hub ghcr.io/${{ github.actor }}
