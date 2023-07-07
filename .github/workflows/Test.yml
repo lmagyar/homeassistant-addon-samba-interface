@@ -14,11 +14,9 @@ jobs:
     - name: Checkout the repository
       uses: actions/checkout@v3
     - name: Test build
-      uses: home-assistant/builder@2023.03.0
+      uses: home-assistant/builder@2023.06.1
       with:
         args: |
           --${{ matrix.arch }} \
           --target samba \
           --test
-      env:
-        CAS_API_KEY: ${{ secrets.CAS_TOKEN }}

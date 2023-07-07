@@ -1,5 +1,11 @@
 # Changelog
 
+## 10.0.2.1 (forked)
+
+- Update Samba to v4.18.4-r0
+- Update Add-on base image to v14.0.2
+- Sign add-on with Sigstore Cosign
+
 ## 10.0.2.0 (forked)
 
 - Merge upstream changes

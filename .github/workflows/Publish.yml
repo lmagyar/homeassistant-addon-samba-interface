@@ -7,6 +7,10 @@ jobs:
   publish:
     name: Publish
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
     strategy:
       matrix:
         arch: ["aarch64", "amd64", "armhf", "armv7", "i386"]
@@ -14,17 +18,16 @@ jobs:
     - name: Checkout the repository
       uses: actions/checkout@v3
     - name: Login to ghcr.io
-      uses: docker/login-action@v2.1.0
+      uses: docker/login-action@v2.2.0
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Publish
-      uses: home-assistant/builder@2023.03.0
+      uses: home-assistant/builder@2023.06.1
       with:
         args: |
           --${{ matrix.arch }} \
           --target samba \
+          --cosign \
           --docker-hub ghcr.io/${{ github.actor }}
-      env:
-        CAS_API_KEY: ${{ secrets.CAS_TOKEN }}
