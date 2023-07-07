@@ -2,7 +2,7 @@
 
 ## vNext (forked)
 
-- Update Samba to v4.18.3-r0
+- Update Samba to v4.18.4-r0
 - Update Add-on base image to v14.0.2
 - Sign add-on with Sigstore Cosign
 
