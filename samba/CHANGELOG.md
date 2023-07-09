@@ -1,5 +1,9 @@
 # Changelog
 
+## vNext (forked)
+
+- Workaround for LOG_LEVEL environment variable superfluous newline character
+
 ## 10.0.2.1 (forked)
 
 - Update Samba to v4.18.4-r0
