@@ -1,6 +1,6 @@
 # Changelog
 
-## vNext (forked)
+## 10.0.2.2 (forked)
 
 - Workaround for LOG_LEVEL environment variable superfluous newline character
 
