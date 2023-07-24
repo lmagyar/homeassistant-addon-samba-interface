@@ -10,7 +10,7 @@ ENV \
 RUN \
     apk add --no-cache \
         samba-common-tools=4.18.5-r0 \
-        samba-server=4.18.4-r0 \
+        samba-server=4.18.5-r0 \
     \
     && mkdir -p /var/lib/samba \
     && touch \
