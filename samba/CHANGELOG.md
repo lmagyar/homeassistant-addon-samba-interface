@@ -4,6 +4,7 @@
 
 - Update Samba to v4.18.5-r0
 - Update Add-on base image to v14.0.5
+- Remove workaround for LOG_LEVEL environment variable superfluous newline character
 
 ## 10.0.2.2 (forked)
 
