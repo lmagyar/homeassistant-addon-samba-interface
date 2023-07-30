@@ -43,7 +43,7 @@ Follow these steps to get the add-on installed on your system:
    repository.
 1. Find the "Samba share with features" add-on and click it. If it doesn't show
    up, wait until HA refreshes the information about the add-on, or click
-   **Reload** in the **...** menu at the top right corner.
+   **Check for updates** in the **...** menu at the top right corner.
 1. Click on the "INSTALL" button.
 
 ## How to use
