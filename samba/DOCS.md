@@ -7,9 +7,13 @@
 > Changes:
 >   - Restore the possibility to specify `interfaces` in the configuration
 >   - Make Samba log level configurable
->
-> By default, the configuration is `interfaces: []`, so Samba will run on all
-> interfaces and list possible interface values as notice in the log.
+
+> ---
+
+> **Note:** By default, the configuration is `interfaces: []`, so Samba will run
+> on all interfaces and list possible interface values as notice in the log.
+
+> ---
 
 > **Note:** Please use `interfaces`, the plural form, with an _**S**_ at the
 > end.
