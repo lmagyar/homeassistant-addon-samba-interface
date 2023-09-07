@@ -1,5 +1,11 @@
 # Changelog
 
+## 10.0.2.3 (forked)
+
+- Update Samba to v4.18.5-r0
+- Update Add-on base image to v14.1.0 (Update Alpine base image to v3.18.3)
+- Remove workaround for LOG_LEVEL environment variable superfluous newline character
+
 ## 10.0.2.2 (forked)
 
 - Workaround for LOG_LEVEL environment variable superfluous newline character

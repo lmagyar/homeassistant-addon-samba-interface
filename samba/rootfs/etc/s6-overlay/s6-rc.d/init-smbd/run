@@ -59,7 +59,7 @@ else
 fi
 
 # Set Samba log level
-case "${__BASHIO_LOG_LEVELS[${__BASHIO_LOG_LEVEL//$'\n'}],,}" in
+case "${__BASHIO_LOG_LEVELS[${__BASHIO_LOG_LEVEL}],,}" in
   trace)
     log_level=3;;
   debug)
