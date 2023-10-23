@@ -6,11 +6,9 @@ description: Expose Home Assistant folders with SMB/CIFS
 url: https://github.com/lmagyar/homeassistant-addon-samba-interface
 codenotary: lmagyar1973@gmail.com
 arch:
-  - armhf
-  - armv7
   - aarch64
   - amd64
-  - i386
+  - armv7
 hassio_api: true
 host_network: true
 image: ghcr.io/lmagyar/{arch}-addon-samba-interface
