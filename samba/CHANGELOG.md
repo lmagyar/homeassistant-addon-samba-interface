@@ -7,7 +7,7 @@
 
 Nonbreaking changes:
 - Update Samba to v4.18.8-r0
-- Update Add-on base image to v14.3.0
+- Update Add-on base image to v14.3.1
 
 ## 10.0.2.3 (forked)
 
