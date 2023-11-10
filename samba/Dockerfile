@@ -9,8 +9,7 @@ ENV \
 # Setup base
 RUN \
     apk add --no-cache \
-        samba-common-tools=4.18.8-r0 \
-        samba-server=4.18.8-r0 \
+        samba=4.18.8-r0 \
     \
     && mkdir -p /var/lib/samba \
     && touch \
@@ -21,3 +20,6 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
+
+HEALTHCHECK \
+    CMD smbclient -L '\\localhost' -U '%' -m SMB3
