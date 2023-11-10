@@ -22,36 +22,15 @@ fi
 bashio::log.info "Hostname: ${HOSTNAME}"
 
 # Determine interfaces list
-if bashio::config.exists 'interfaces'; then
-    # Configuration exists, use configured values
-    for interface in $(bashio::config 'interfaces'); do
-        interfaces+=("${interface}")
-    done
-else
-    # Configuration doesn't exist, default to the official add-on
-    # Get supported interfaces
-    for interface in $(bashio::network.interfaces); do
-        interfaces+=("${interface}")
-    done
-    if [ ${#interfaces[@]} -eq 0 ]; then
-        bashio::log.fatal
-        bashio::log.fatal 'No supported interfaces found to bind on.'
-        bashio::log.fatal
-        bashio::log.fatal 'Please use the optional interfaces: configuration option'
-        bashio::log.fatal 'to specify the interfaces Samba should bind to.'
-        bashio::log.fatal
-        bashio::log.fatal 'Configuring an empty list for the interfaces: configuration'
-        bashio::log.fatal 'option (eg. interfaces: []) Samba will bind to all interfaces'
-        bashio::log.fatal 'and log the possible values.'
-        bashio::log.fatal
-        bashio::exit.nok
-    fi
-fi
+for interface in $(bashio::config 'interfaces'); do
+    interfaces+=("${interface}")
+done
 if [ ${#interfaces[@]} -eq 0 ]; then
-    bashio::log.notice "Interfaces: <empty list, running on all interfaces>"
+    bashio::log.notice "Interfaces: <empty list>"
+    bashio::log.notice "Running on localhost (127.0.0.1) only"
     bashio::log.notice "Possible values for the interfaces configuration option are"
     bashio::log.notice "  interfaces:"
-    ifconfig | grep -Eo '^\w+' | grep -Ev '^veth|^docker|^hassio' | while read -r line ; do
+    ifconfig | grep -Eo '^\w+' | grep -Ev '^lo|^veth|^docker|^hassio' | while read -r line ; do
         bashio::log.notice "    - ${line}"
     done
 else

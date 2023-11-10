@@ -13,7 +13,8 @@ Share your configuration over the network using Windows file sharing.
 > ---
 
 > **Note:** By default, the configuration is `interfaces: []`, so Samba will run
-> on all interfaces and list possible interface values as notice in the log.
+> on localhost (127.0.0.1) only, and list possible interface values as notice in
+> the log.
 
 > ---
 

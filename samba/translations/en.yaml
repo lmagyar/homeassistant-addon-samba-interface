@@ -24,8 +24,7 @@ configuration:
   interfaces:
     name: Interfaces
     description: >-
-      Optional list of interfaces to bind on instead of the default supported interfaces.
-      In case of an empty list, Samba will run on all interfaces.
+      The network interfaces Samba should listen on for incoming connections.
   log_level:
     name: Log level
     description: >-

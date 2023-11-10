@@ -50,6 +50,6 @@ schema:
   allow_hosts:
     - str
   interfaces:
-    - str?
+    - str
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
 startup: services
