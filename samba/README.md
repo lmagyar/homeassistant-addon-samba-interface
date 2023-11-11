@@ -13,7 +13,8 @@ Share your configuration over the network using Windows file sharing.
 > ---
 
 > **Note:** By default, the configuration is `interfaces: []`, so Samba will run
-> on all interfaces and list possible interface values as notice in the log.
+> on localhost (127.0.0.1) only, and list possible interface values as notice in
+> the log.
 
 > ---
 
@@ -58,9 +59,9 @@ It lets you access your config files with Windows and macOS devices.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [commits-shield]: https://img.shields.io/github/commit-activity/y/lmagyar/homeassistant-addon-samba-interface.svg
 [commits]: https://github.com/lmagyar/homeassistant-addon-samba-interface/commits/master
 [github-actions-shield]: https://github.com/lmagyar/homeassistant-addon-samba-interface/workflows/Publish/badge.svg

@@ -11,7 +11,8 @@
 > ---
 
 > **Note:** By default, the configuration is `interfaces: []`, so Samba will run
-> on all interfaces and list possible interface values as notice in the log.
+> on localhost (127.0.0.1) only, and list possible interface values as notice in
+> the log.
 
 > ---
 
@@ -112,19 +113,13 @@ The username you would like to use to authenticate with the Samba server.
 
 The password that goes with the username configured for authentication.
 
-### Option: `interfaces` (optional)
+### Option: `interfaces` (required)
 
 The network interfaces Samba should listen on for incoming connections.
 
-- This option should only be used in advanced cases. In general, setting this option is not needed.
+In case of an empty list (`interfaces: []`, this is the default) Samba will run on localhost (127.0.0.1) only, and list possible interface values as notice in the log.
 
-- If omitted, it is backward compatible with the official add-on: Samba will listen on all supported interfaces of Home Assistant (see `> ha network info`), but if there are no supported interfaces, Samba will exit with an error.
-
-- In case of an empty list (`interfaces: []`, this is the default) Samba will run on all interfaces and list possible interface values as notice in the log.
-
-- For possible interfaces see `> ifconfig` or `> ip link show`.
-
-**Note:** Samba needs at least one non-loopback, non-ipv6, local interface to listen on and become browser on it. Without it, it works, but reloads it's interfaces in an infinite loop forever in each 10 seconds to check, whether a non-loopback, non-ipv6, local interface is added. This reload will fill the log file with infinite number of entries like `added interface lo ip=::1 bcast= netmask=ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff`.
+For possible interfaces see also `> ifconfig` or `> ip link show`.
 
 ### Option: `allow_hosts` (required)
 
