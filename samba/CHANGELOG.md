@@ -1,6 +1,6 @@
 # Changelog
 
-## vNext (forked)
+## 11.0.0.2 (forked)
 
 ***BREAKING CHANGES:***
 - The `homeassistant` share has been renamed BACK to `config` (this will be the final name in the original add-on also)
