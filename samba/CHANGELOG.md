@@ -1,5 +1,9 @@
 # Changelog
 
+## vNext (forked)
+
+- Update Add-on base image to v14.3.2
+
 ## 11.0.0.1 (forked)
 
 ***BREAKING CHANGES:***
