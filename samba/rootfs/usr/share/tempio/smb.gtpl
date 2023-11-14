@@ -27,7 +27,7 @@
 [config]
    browseable = yes
    writeable = yes
-   path = /config
+   path = /homeassistant
 
    valid users = {{ .username }}
    force user = root

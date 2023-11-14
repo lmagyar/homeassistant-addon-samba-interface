@@ -65,6 +65,6 @@ echo -e "${password}\n${password}" \
     | smbpasswd -a -s -c "/etc/samba/smb.conf" "${username}"
 
 # Temporary workaround for Supervisor breaking changes
-if ! bashio::fs.directory_exists "/config" && bashio::fs.directory_exists "/homeassistant"; then
-    ln -s "/homeassistant" "/config"
+if ! bashio::fs.directory_exists "/homeassistant" && bashio::fs.directory_exists "/config"; then
+    ln -s "/config" "/homeassistant"
 fi
