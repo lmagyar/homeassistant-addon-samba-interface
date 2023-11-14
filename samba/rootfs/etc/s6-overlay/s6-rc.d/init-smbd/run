@@ -63,8 +63,3 @@ adduser -D -H -G "${username}" -s /bin/false "${username}"
 # shellcheck disable=SC1117
 echo -e "${password}\n${password}" \
     | smbpasswd -a -s -c "/etc/samba/smb.conf" "${username}"
-
-# Temporary workaround for Supervisor breaking changes
-if ! bashio::fs.directory_exists "/homeassistant" && bashio::fs.directory_exists "/config"; then
-    ln -s "/config" "/homeassistant"
-fi
