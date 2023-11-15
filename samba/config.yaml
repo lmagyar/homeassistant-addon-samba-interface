@@ -1,5 +1,5 @@
 ---
-version: 12.0.0
+version: 12.1.0
 slug: samba
 name: Samba share with features
 description: Expose Home Assistant folders with SMB/CIFS
@@ -15,8 +15,9 @@ image: ghcr.io/lmagyar/{arch}-addon-samba-interface
 init: false
 map:
   - addons:rw
+  - all_addon_configs:rw
   - backup:rw
-  - config:rw
+  - homeassistant_config:rw
   - media:rw
   - share:rw
   - ssl:rw
