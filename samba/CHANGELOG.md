@@ -2,6 +2,8 @@
 
 ## vNext (forked)
 
+_No functional changes, just got the versioning in sync with the original add-on._
+
 ## 12.1.0
 
 - Use the new Home Assistant folder for the `config` share
