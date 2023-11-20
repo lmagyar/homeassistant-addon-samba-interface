@@ -86,7 +86,6 @@ password: YOUR_PASSWORD
 interfaces:
   - eth0
   - wlan0
-  - lo
 allow_hosts:
   - 10.0.0.0/8
   - 172.16.0.0/12
