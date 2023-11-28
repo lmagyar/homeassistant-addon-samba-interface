@@ -2,6 +2,7 @@
 
 ## vNext (forked)
 
+- Decrease Samba log level
 - Revert: Make Samba log level configurable
 
 ## 12.1.0.0 (forked)
