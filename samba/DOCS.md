@@ -6,7 +6,6 @@
 >
 > Changes:
 >   - Restore the possibility to specify `interfaces` in the configuration
->   - Make Samba log level configurable
 
 > ---
 
