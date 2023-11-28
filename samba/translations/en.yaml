@@ -25,7 +25,3 @@ configuration:
     name: Interfaces
     description: >-
       The network interfaces Samba should listen on for incoming connections.
-  log_level:
-    name: Log level
-    description: >-
-      Controls the level of log details the add-on provides.

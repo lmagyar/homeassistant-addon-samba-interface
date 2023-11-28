@@ -51,5 +51,4 @@ schema:
     - str
   interfaces:
     - str
-  log_level: list(trace|debug|info|notice|warning|error|fatal)?
 startup: services
