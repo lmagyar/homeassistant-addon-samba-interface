@@ -9,7 +9,7 @@
    load printers = no
    disable spoolss = yes
 
-   log level = {{ .log_level }}
+   log level = 1
 
    bind interfaces only = yes
    interfaces = 127.0.0.1 {{ .interfaces | join " " }}

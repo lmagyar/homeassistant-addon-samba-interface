@@ -8,7 +8,6 @@ Share your configuration over the network using Windows file sharing.
 >
 > Changes:
 >   - Restore the possibility to specify `interfaces` in the configuration
->   - Make Samba log level configurable
 
 > ---
 

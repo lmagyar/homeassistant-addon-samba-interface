@@ -1,5 +1,14 @@
 # Changelog
 
+## 12.2.0.0 (forked)
+
+- Revert: Make Samba log level configurable
+- Merge upstream changes
+
+## 12.2.0
+
+- Decrease Samba log level
+
 ## 12.1.0.0 (forked)
 
 _No functional changes, just got the versioning in sync with the original add-on._
