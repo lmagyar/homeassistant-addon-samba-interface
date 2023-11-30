@@ -1,6 +1,6 @@
 # Changelog
 
-## vNext (forked)
+## 12.2.0.0 (forked)
 
 - Revert: Make Samba log level configurable
 - Merge upstream changes
