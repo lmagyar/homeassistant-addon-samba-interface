@@ -1,5 +1,9 @@
 # Changelog
 
+## vNext (forked)
+
+- Update Samba to v4.18.9-r0
+
 ## 12.2.0.0 (forked)
 
 - Revert: Make Samba log level configurable
