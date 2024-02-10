@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:14.3.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:15.0.6
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -9,7 +9,7 @@ ENV \
 # Setup base
 RUN \
     apk add --no-cache \
-        samba=4.18.8-r0 \
+        samba=4.18.9-r0 \
     \
     && mkdir -p /var/lib/samba \
     && touch \
