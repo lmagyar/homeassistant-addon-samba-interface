@@ -60,7 +60,7 @@ Nonbreaking changes:
 
 ***BREAKING CHANGES:***
 - Drop support for armhf & i386
-- In case of an empty list (`interfaces: []`, this is the default) Samba will run on localhost (127.0.0.1) only, and not on all interfaces. If you previously used the default settings, please list interfaces explicitly. This is due to the changes from the original add-on: localhost by default is added to the interfaces list (to support HEALTCHECK), so we can't use Samba's default behaviour to run on all interfaces in case of an empty list (there is no empty list from now on).
+- In case of an empty list (`interfaces: []`, this is the default) Samba will run on localhost (127.0.0.1) only, and not on all interfaces. If you previously used the default settings, please list interfaces explicitly. This is due to the changes from the original add-on: localhost by default is added to the interfaces list (to support HEALTHCHECK), so we can't use Samba's default behaviour to run on all interfaces in case of an empty list (there is no empty list from now on).
 - Merge changes from original add-on
   - The `config` share has been renamed to `homeassistant`
   - The `addon_configs` share has been added to access public add-on configurations
@@ -74,7 +74,7 @@ Nonbreaking changes:
 - The `config` share has been renamed to `homeassistant` to match upstream changes.
 - Add support for accessing public add-on configurations
 - ~~Update to Alpine 3.18~~ (forked version already runs on Alpine 3.18)
-- Adds HEALTCHECK support
+- Adds HEALTHCHECK support
 
 ## 10.0.2.3 (forked)
 
