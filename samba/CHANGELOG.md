@@ -2,7 +2,7 @@
 
 ## vNext (forked)
 
-- Update Add-on base image to v15.0.8
+- Update Add-on base image to v15.0.9
 
 ## 12.3.1.1 (forked)
 
