@@ -2,7 +2,7 @@
 
 ## vNext (forked)
 
-- Update Add-on base image to v15.0.9
+- Update Add-on base image to v16.0.0 (Update Alpine base image to v3.20.0)
 
 ## 12.3.1.1 (forked)
 
