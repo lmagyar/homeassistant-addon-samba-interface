@@ -2,7 +2,8 @@
 
 ## vNext (forked)
 
-- Update Add-on base image to v16.3.1
+- Update Samba to v4.19.9-r0
+- Update Add-on base image to v16.3.4
 
 ## 12.3.2.1 (forked)
 
