@@ -3,6 +3,7 @@
 ## vNext (forked)
 
 - Update Samba to v4.19.9-r0
+- Log HEALTHCHECK status and errors
 - Update Add-on base image to v16.3.6
 
 ## 12.3.2.1 (forked)

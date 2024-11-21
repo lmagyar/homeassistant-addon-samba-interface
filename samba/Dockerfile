@@ -22,4 +22,4 @@ RUN \
 COPY rootfs /
 
 HEALTHCHECK \
-    CMD smbclient -L '\\localhost' -U '%' -m SMB3
+    CMD healthcheck
