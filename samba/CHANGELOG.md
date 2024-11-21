@@ -1,6 +1,6 @@
 # Changelog
 
-## vNext (forked)
+## 12.3.2.2 (forked)
 
 - Update Samba to v4.19.9-r0
 - Log HEALTHCHECK status and errors
