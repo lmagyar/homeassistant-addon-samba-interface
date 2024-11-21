@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:16.2.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:16.3.6
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -9,7 +9,7 @@ ENV \
 # Setup base
 RUN \
     apk add --no-cache \
-        samba=4.19.6-r0 \
+        samba=4.19.9-r0 \
     \
     && mkdir -p /var/lib/samba \
     && touch \
@@ -22,4 +22,4 @@ RUN \
 COPY rootfs /
 
 HEALTHCHECK \
-    CMD smbclient -L '\\localhost' -U '%' -m SMB3
+    CMD healthcheck

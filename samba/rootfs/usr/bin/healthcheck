@@ -1,0 +1,25 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+
+# Redirect healthchecks' output to the log
+exec &> /proc/1/fd/1
+
+# LAST_REPORTED_HEALTH_STATE is in contenv at /var/run/s6/container_environment
+
+if ! smbclient -L '\\localhost' -U '%' -m SMB3 > /dev/null
+then
+  # Unhealthy
+  if ! bashio::var.equals "${LAST_REPORTED_HEALTH_STATE-}" "UNHEALTHY"; then
+    printf "UNHEALTHY" > /var/run/s6/container_environment/LAST_REPORTED_HEALTH_STATE
+  fi
+  # Log it always
+  bashio::log.fatal "Add-on is unhealthy"
+  bashio::exit.nok
+else
+  # Healthy
+  if ! bashio::var.equals "${LAST_REPORTED_HEALTH_STATE-}" "HEALTHY"; then
+    printf "HEALTHY" > /var/run/s6/container_environment/LAST_REPORTED_HEALTH_STATE
+    # Log it only once
+    bashio::log.info "Add-on is healthy"
+  fi
+fi
