@@ -1,6 +1,6 @@
 # Changelog
 
-## vNext (forked)
+## 12.3.2.3 (forked)
 
 - Update Samba to v4.20.6-r1
 - Update Add-on base image to v17.0.2 (Update Alpine base image to v3.21.0)
