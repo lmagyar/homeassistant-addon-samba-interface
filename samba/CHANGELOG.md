@@ -1,5 +1,13 @@
 # Changelog
 
+## 12.3.3.1 (forked)
+
+- Update Add-on base image to v17.1.0
+
+## 12.3.3
+
+- Enable Samba configurations to improve interoperability with Apple devices
+
 ## 12.3.2.3 (forked)
 
 - Update Samba to v4.20.6-r1
