@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.4.0
+
+- Add the ability to enable and disable specific shares, improving user control over folder access
+
 ## 12.3.3.1 (forked)
 
 - Update Add-on base image to v17.1.0

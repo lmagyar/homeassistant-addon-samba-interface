@@ -54,6 +54,7 @@ Follow these steps to get the add-on installed on your system:
 
 1. In the configuration section, set a username and password.
    You can specify any username and password; these are not related in any way to the login credentials you use to log in to Home Assistant or to log in to the computer with which you will use Samba share.
+1. Review the enabled shares. Disable any you do not plan to use. Shares can be re-enabled later if needed.
 1. Save the configuration.
 1. Start the add-on.
 1. Check the add-on log output to see the result.
@@ -85,6 +86,14 @@ password: YOUR_PASSWORD
 interfaces:
   - eth0
   - wlan0
+enabled_shares:
+  - addons
+  - addon_configs
+  - backup
+  - config
+  - media
+  - share
+  - ssl
 allow_hosts:
   - 10.0.0.0/8
   - 172.16.0.0/12
@@ -118,6 +127,10 @@ The network interfaces Samba should listen on for incoming connections.
 In case of an empty list (`interfaces: []`, this is the default) Samba will run on localhost (127.0.0.1) only, and list possible interface values as notice in the log.
 
 For possible interfaces see also `> ifconfig` or `> ip link show`.
+
+### Option: `enabled_shares` (required)
+
+List of Samba shares that will be accessible. Any shares removed or commented out of the list will not be accessible.
 
 ### Option: `allow_hosts` (required)
 
