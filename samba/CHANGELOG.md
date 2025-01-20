@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.4.0.0 (forked)
+
+- Merge upstream changes
+
 ## 12.4.0
 
 - Add the ability to enable and disable specific shares, improving user control over folder access
