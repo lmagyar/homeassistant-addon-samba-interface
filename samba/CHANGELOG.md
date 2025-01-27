@@ -1,5 +1,9 @@
 # Changelog
 
+## vNext (forked)
+
+- Configure log format for the add-on to be compatible with Samba's format
+
 ## 12.4.0.0 (forked)
 
 - Merge upstream changes
