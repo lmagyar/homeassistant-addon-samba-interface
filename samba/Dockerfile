@@ -4,7 +4,7 @@ FROM ${BUILD_FROM}
 
 # Environment variables
 ENV \
-    LANG C.UTF-8 \
+    LANG="C.UTF-8" \
     # Add-on log format
     LOG_FORMAT="{TIMESTAMP} {LEVEL}: {MESSAGE}" \
     LOG_TIMESTAMP="%Y-%m-%d %H:%M:%S"
