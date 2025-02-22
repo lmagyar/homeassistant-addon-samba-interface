@@ -1,6 +1,6 @@
 # Changelog
 
-## vNext (forked)
+## 12.4.0.1 (forked)
 
 - Make "local master" configurable
 - Configure log format for the add-on to be compatible with Samba's format
