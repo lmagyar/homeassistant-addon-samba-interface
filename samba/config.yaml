@@ -25,6 +25,7 @@ options:
   username: homeassistant
   password: null
   workgroup: WORKGROUP
+  local_master: true
   enabled_shares:
     - addons
     - addon_configs
@@ -52,6 +53,7 @@ schema:
   username: str
   password: password
   workgroup: str
+  local_master: bool
   enabled_shares:
     - "match(^(?i:(addons|addon_configs|backup|config|media|share|ssl))$)"
   compatibility_mode: bool

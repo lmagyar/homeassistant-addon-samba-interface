@@ -81,6 +81,7 @@ Example add-on configuration:
 
 ```yaml
 workgroup: WORKGROUP
+local_master: true
 username: homeassistant
 password: YOUR_PASSWORD
 interfaces:
@@ -111,6 +112,10 @@ compatibility_mode: false
 ### Option: `workgroup` (required)
 
 Change WORKGROUP to reflect your network needs.
+
+### Option: `local_master` (required)
+
+Enable to try and become a local master browser on a subnet.
 
 ### Option: `username` (required)
 
