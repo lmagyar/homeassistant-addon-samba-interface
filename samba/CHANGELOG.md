@@ -2,6 +2,7 @@
 
 ## vNext (forked)
 
+- Make "local master" configurable
 - Configure log format for the add-on to be compatible with Samba's format
 - Update Add-on base image to v17.2.1
 
