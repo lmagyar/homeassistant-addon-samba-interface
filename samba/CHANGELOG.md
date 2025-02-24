@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.5.0
+
+- ~Add the ability to enable and disable trying to become a local master browser on a subnet~ (already implemented in the forked version)
+
 ## 12.4.0.1 (forked)
 
 - Make "local master" configurable
