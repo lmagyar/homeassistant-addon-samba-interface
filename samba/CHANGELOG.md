@@ -1,5 +1,17 @@
 # Changelog
 
+## 12.5.1.1 (forked)
+
+- Update Add-on base image to v17.2.4
+
+## 12.5.1
+
+- Add configurations option to disable Apple devices interoperability. Disabling this setting might be required for file systems that do not support extended attributes such as exFAT.
+
+## 12.5.0
+
+- ~Add the ability to enable and disable trying to become a local master browser on a subnet~ (already implemented in the forked version)
+
 ## 12.4.0.1 (forked)
 
 - Make "local master" configurable
