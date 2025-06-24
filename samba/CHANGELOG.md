@@ -2,7 +2,12 @@
 
 ## vNext (forked)
 
+- For localhost bind to "lo" and not to "127.0.0.1"
 - Update Add-on base image to v18.0.0 (Update Alpine base image to v3.22.0)
+
+## 12.5.2
+
+- Avoid binding to disabled network interfaces
 
 ## 12.5.1.1 (forked)
 

@@ -10,8 +10,7 @@
 > ---
 
 > **Note:** By default, the configuration is `interfaces: []`, so Samba will run
-> on localhost (127.0.0.1) only, and list possible interface values as notice in
-> the log.
+> on localhost only, and list possible interface values as notice in the log.
 
 > ---
 
@@ -129,7 +128,7 @@ The password that goes with the username configured for authentication.
 
 The network interfaces Samba should listen on for incoming connections.
 
-In case of an empty list (`interfaces: []`, this is the default) Samba will run on localhost (127.0.0.1) only, and list possible interface values as notice in the log.
+In case of an empty list (`interfaces: []`, this is the default) Samba will run on localhost only, and list possible interface values as notice in the log.
 
 For possible interfaces see also `> ifconfig` or `> ip link show`.
 
