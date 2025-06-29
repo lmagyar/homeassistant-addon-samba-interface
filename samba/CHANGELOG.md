@@ -1,6 +1,6 @@
 # Changelog
 
-## vNext (forked)
+## 12.5.2.1 (forked)
 
 - Update Samba to v4.21.4-r4
 - For localhost bind to "lo" and not to "127.0.0.1"
