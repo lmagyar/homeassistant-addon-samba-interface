@@ -1,5 +1,15 @@
 # Changelog
 
+## 12.5.2.1 (forked)
+
+- Update Samba to v4.21.4-r4
+- For localhost bind to "lo" and not to "127.0.0.1"
+- Update Add-on base image to v18.0.0 (Update Alpine base image to v3.22.0)
+
+## 12.5.2
+
+- Avoid binding to disabled network interfaces
+
 ## 12.5.1.1 (forked)
 
 - Update Add-on base image to v17.2.4

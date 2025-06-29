@@ -24,11 +24,17 @@ bashio::log.info "Hostname: ${HOSTNAME}"
 
 # Determine interfaces list
 for interface in $(bashio::config 'interfaces'); do
-    interfaces+=("${interface}")
+    if ! bashio::fs.file_exists "/sys/class/net/${interface}/operstate"; then
+        bashio::log.warning "Interface ${interface} doesn't exist, skipping it"
+    elif ! [[ "$(cat "/sys/class/net/${interface}/operstate")" =~ ^(up|unknown)$ ]]; then
+        bashio::log.warning "Interface ${interface} is disabled, skipping it"
+    else
+        interfaces+=("${interface}")
+    fi
 done
 if [ ${#interfaces[@]} -eq 0 ]; then
     bashio::log.notice "Interfaces: <empty list>"
-    bashio::log.notice "Running on localhost (127.0.0.1) only"
+    bashio::log.notice "Running on localhost only"
     bashio::log.notice "Possible values for the interfaces configuration option are"
     bashio::log.notice "  interfaces:"
     ifconfig | grep -Eo '^\w+' | grep -Ev '^lo|^veth|^docker|^hassio' | while read -r line ; do
