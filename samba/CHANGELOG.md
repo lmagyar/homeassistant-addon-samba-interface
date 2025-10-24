@@ -1,5 +1,9 @@
 # Changelog
 
+## vNext (forked)
+
+- Update Add-on base image to v18.2.1
+
 ## 12.5.2.1 (forked)
 
 - Update Samba to v4.21.4-r4
