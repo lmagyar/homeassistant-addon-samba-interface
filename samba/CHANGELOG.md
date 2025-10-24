@@ -4,6 +4,10 @@
 
 - Update Add-on base image to v18.2.1
 
+## 12.5.3
+
+- Add option for setting server signing parameter
+
 ## 12.5.2.1 (forked)
 
 - Update Samba to v4.21.4-r4
