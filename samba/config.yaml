@@ -1,5 +1,5 @@
 ---
-version: 12.5.2.1
+version: 12.5.4.1
 slug: samba
 name: Samba share with features
 description: Expose Home Assistant folders with SMB/CIFS
@@ -36,6 +36,7 @@ options:
     - ssl
   compatibility_mode: false
   apple_compatibility_mode: true
+  server_signing: "default"
   veto_files:
     - ._*
     - .DS_Store
@@ -59,6 +60,7 @@ schema:
     - "match(^(?i:(addons|addon_configs|backup|config|media|share|ssl))$)"
   compatibility_mode: bool
   apple_compatibility_mode: bool
+  server_signing: list(default|auto|mandatory|disabled)
   veto_files:
     - str
   allow_hosts:
