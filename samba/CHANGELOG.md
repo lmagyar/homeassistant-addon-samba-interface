@@ -1,6 +1,6 @@
 # Changelog
 
-## vNext (forked)
+## 12.5.4.2 (forked)
 
 - Fix for add-on base image and bashio log changes, causing healthcheck messages to be not logged
 
