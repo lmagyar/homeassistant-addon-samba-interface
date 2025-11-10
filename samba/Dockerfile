@@ -12,7 +12,7 @@ ENV \
 # Setup base
 RUN \
     apk add --no-cache \
-        samba=4.21.4-r4 \
+        samba=4.21.9-r1 \
     \
     && mkdir -p /var/lib/samba \
     && touch \
