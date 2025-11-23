@@ -2,6 +2,7 @@
 
 ## vNext (forked)
 
+- Update samba to v4.21.9-r1
 - Remove deprecated codenotary fields
 
 ## 12.5.4.2 (forked)
