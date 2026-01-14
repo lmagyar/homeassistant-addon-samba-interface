@@ -85,7 +85,7 @@ For more details, please see the add-on's [Documentation][Documentation] pages.
 [installations-shield]: https://img.shields.io/badge/dynamic/json?label=reported%20installations&query=$[%27ba124dcc_samba%27].total&url=https%3A%2F%2Fanalytics.home-assistant.io%2Faddons.json
 [license-shield]: https://img.shields.io/github/license/lmagyar/homeassistant-addon-samba-interface.svg
 [licence]: https://github.com/lmagyar/homeassistant-addon-samba-interface/blob/master/LICENSE
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-green.svg
 [releases-shield]: https://img.shields.io/github/tag/lmagyar/homeassistant-addon-samba-interface.svg?label=release
 [releases]: https://github.com/lmagyar/homeassistant-addon-samba-interface/tags
