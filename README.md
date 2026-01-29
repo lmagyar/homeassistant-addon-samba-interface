@@ -1,11 +1,11 @@
 
-# Home Assistant Custom Add-on: Samba share with features
+# Home Assistant Custom App: Samba share with features
 
 Share your configuration over the network using Windows file sharing.
 
 ![Warning][warning_stripe]
 
-> This is a **fork** of the [official add-on][official_addon]!
+> This is a **fork** of the [official app][official_app]!
 >
 > Changes:
 >   - Restore the possibility to specify `interfaces` in the configuration
@@ -20,7 +20,7 @@ Share your configuration over the network using Windows file sharing.
 > **Note:** Please use `interfaces`, the plural form, with an _**S**_ at the
 > end.
 >
-> The official add-on in the past used a plain string and we were able to add
+> The official app in the past used a plain string and we were able to add
 > multiple interfaces separated with a space, but this forked version uses a
 > string list, because this is the way how we should specify multiple items, ie.
 > a list, like `veto_files` and `allow_hosts`.
@@ -53,24 +53,24 @@ Share your configuration over the network using Windows file sharing.
 
 ## About
 
-This Add-on allows you to enable file sharing across different operating systems over a network.
+This App allows you to enable file sharing across different operating systems over a network.
 It lets you access your config files with Windows and macOS devices.
 
 ## Installation
 
-1. Navigate in your Home Assistant frontend to **Settings** -> **Add-ons** ->
-   **Add-on Store**.
+1. Navigate in your Home Assistant frontend to **Settings** > **Apps** >
+   **Install app**.
 1. In the **...** menu at the top right corner click **Repositories**, add
    `https://github.com/lmagyar/homeassistant-addon-samba-interface` as
    repository.
-1. Find the "Samba share with features" add-on and click it. If it doesn't show
-   up, wait until HA refreshes the information about the add-on, or click
+1. Find the "Samba share with features" app and click it. If it doesn't show
+   up, wait until HA refreshes the information about the app, or click
    **Check for updates** in the **...** menu at the top right corner.
 1. Click on the "INSTALL" button.
 
 ## Documentation
 
-For more details, please see the add-on's [Documentation][Documentation] pages.
+For more details, please see the app's [Documentation][Documentation] pages.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
@@ -92,4 +92,4 @@ For more details, please see the add-on's [Documentation][Documentation] pages.
 [updated-shield]: https://img.shields.io/github/last-commit/lmagyar/homeassistant-addon-samba-interface/master?label=updated
 [updated]: https://github.com/lmagyar/homeassistant-addon-samba-interface/commits/master
 [warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/images/warning_stripe_wide.png
-[official_addon]: https://github.com/home-assistant/addons/tree/master/samba
+[official_app]: https://github.com/home-assistant/addons/tree/master/samba
