@@ -6,6 +6,10 @@
 - Update App base image to v20
 - Remove deprecated codenotary fields
 
+## 12.6.1
+
+- Support spaces in configurable username
+
 ## 12.6.0
 
 - Do initial healthcheck after 3s to speedup startup
