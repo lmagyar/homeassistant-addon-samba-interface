@@ -1,5 +1,8 @@
 # Changelog
 
+- Drop support for armv7 architecture
+- Update Add-on base image to v20 (drop armv7 support)
+
 ## vNext (forked)
 
 - Update samba to v4.21.9-r1
