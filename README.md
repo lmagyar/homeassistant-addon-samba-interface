@@ -53,7 +53,7 @@ Share your configuration over the network using Windows file sharing.
 
 ## About
 
-This App allows you to enable file sharing across different operating systems over a network.
+This app (formerly known as add-on) allows you to enable file sharing across different operating systems over a network.
 It lets you access your config files with Windows and macOS devices.
 
 ## Installation
