@@ -1,10 +1,10 @@
-# Home Assistant Custom Add-on: Samba share with features
+# Home Assistant Custom App: Samba share with features
 
 Share your configuration over the network using Windows file sharing.
 
 ![Warning][warning_stripe]
 
-> This is a **fork** of the [official add-on][official_addon]!
+> This is a **fork** of the [official app][official_app]!
 >
 > Changes:
 >   - Restore the possibility to specify `interfaces` in the configuration
@@ -19,7 +19,7 @@ Share your configuration over the network using Windows file sharing.
 > **Note:** Please use `interfaces`, the plural form, with an _**S**_ at the
 > end.
 >
-> The official add-on in the past used a plain string and we were able to add
+> The official app in the past used a plain string and we were able to add
 > multiple interfaces separated with a space, but this forked version uses a
 > string list, because this is the way how we should specify multiple items, ie.
 > a list, like `veto_files` and `allow_hosts`.
@@ -52,13 +52,13 @@ Share your configuration over the network using Windows file sharing.
 
 ## About
 
-This Add-on allows you to enable file sharing across different operating systems over a network.
+This app (formerly known as add-on) allows you to enable file sharing across different operating systems over a network.
 It lets you access your config files with Windows and macOS devices.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [commits-shield]: https://img.shields.io/github/commit-activity/y/lmagyar/homeassistant-addon-samba-interface.svg
 [commits]: https://github.com/lmagyar/homeassistant-addon-samba-interface/commits/master
@@ -74,4 +74,4 @@ It lets you access your config files with Windows and macOS devices.
 [updated-shield]: https://img.shields.io/github/last-commit/lmagyar/homeassistant-addon-samba-interface/master?label=updated
 [updated]: https://github.com/lmagyar/homeassistant-addon-samba-interface/commits/master
 [warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/images/warning_stripe_wide.png
-[official_addon]: https://github.com/home-assistant/addons/tree/master/samba
+[official_app]: https://github.com/home-assistant/addons/tree/master/samba

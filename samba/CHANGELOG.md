@@ -1,12 +1,28 @@
 # Changelog
 
+## 12.6.1.1 (forked)
+
+- Update samba to v4.22.8-r0
+- Update App base image to v20
+- Remove deprecated codenotary fields
+
+## 12.6.1
+
+- Support spaces in configurable username
+
+## 12.6.0
+
+- Do initial healthcheck after 3s to speedup startup
+- ~Update base image to Alpine 3.23 (base image tag 3.23-2026.02.0)~ (forked version uses hassio-addons base images)
+- Drop builds of unsupported architectures
+
 ## 12.5.4.2 (forked)
 
-- Fix for add-on base image and bashio log changes, causing healthcheck messages to be not logged
+- Fix for app base image and bashio log changes, causing healthcheck messages to be not logged
 
 ## 12.5.4.1 (forked)
 
-- Update Add-on base image to v18.2.1
+- Update App base image to v18.2.1
 
 ## 12.5.4
 
@@ -20,7 +36,7 @@
 
 - Update Samba to v4.21.4-r4
 - For localhost bind to "lo" and not to "127.0.0.1"
-- Update Add-on base image to v18.0.0 (Update Alpine base image to v3.22.0)
+- Update App base image to v18.0.0 (Update Alpine base image to v3.22.0)
 
 ## 12.5.2
 
@@ -28,7 +44,7 @@
 
 ## 12.5.1.1 (forked)
 
-- Update Add-on base image to v17.2.4
+- Update App base image to v17.2.4
 
 ## 12.5.1
 
@@ -41,8 +57,8 @@
 ## 12.4.0.1 (forked)
 
 - Make "local master" configurable
-- Configure log format for the add-on to be compatible with Samba's format
-- Update Add-on base image to v17.2.1
+- Configure log format for the app to be compatible with Samba's format
+- Update App base image to v17.2.1
 
 ## 12.4.0.0 (forked)
 
@@ -54,7 +70,7 @@
 
 ## 12.3.3.1 (forked)
 
-- Update Add-on base image to v17.1.0
+- Update App base image to v17.1.0
 
 ## 12.3.3
 
@@ -63,17 +79,17 @@
 ## 12.3.2.3 (forked)
 
 - Update Samba to v4.20.6-r1
-- Update Add-on base image to v17.0.2 (Update Alpine base image to v3.21.0)
+- Update App base image to v17.0.2 (Update Alpine base image to v3.21.0)
 
 ## 12.3.2.2 (forked)
 
 - Update Samba to v4.19.9-r0
 - Log HEALTHCHECK status and errors
-- Update Add-on base image to v16.3.6
+- Update App base image to v16.3.6
 
 ## 12.3.2.1 (forked)
 
-- Update Add-on base image to v16.2.0
+- Update App base image to v16.2.0
 
 ## 12.3.2
 
@@ -82,11 +98,11 @@
 ## 12.3.1.2 (forked)
 
 - Update Samba to v4.19.6-r0
-- Update Add-on base image to v16.0.0 (Update Alpine base image to v3.20.0)
+- Update App base image to v16.0.0 (Update Alpine base image to v3.20.0)
 
 ## 12.3.1.1 (forked)
 
-- Update Add-on base image to v15.0.7
+- Update App base image to v15.0.7
 
 ## 12.3.1
 
@@ -95,7 +111,7 @@
 ## 12.3.0.1 (forked)
 
 - Update Samba to v4.18.9-r0
-- Update Add-on base image to v15.0.6 (Update Alpine base image to v3.19.1)
+- Update App base image to v15.0.6 (Update Alpine base image to v3.19.1)
 
 ## 12.3.0
 
@@ -112,54 +128,54 @@
 
 ## 12.1.0.0 (forked)
 
-_No functional changes, just got the versioning in sync with the original add-on._
+_No functional changes, just got the versioning in sync with the original app._
 
 ## 12.1.0
 
 - Use the new Home Assistant folder for the `config` share
-- Add support for accessing public add-on configurations
+- Add support for accessing public app configurations
 
 ## 12.0.0
 
-- Temporary remove access to add-on config shares, until Supervisor 2023.11.2 has been rolled out stable
+- Temporary remove access to app config shares, until Supervisor 2023.11.2 has been rolled out stable
 - Revert `config` share name change to avoid user facing change
 - Adjust location of Home Assistant config to match latest dev/beta Supervisor
-- ~Migrate add-on layout to S6 Overlay~ (forked version already migrated it's layout)
+- ~Migrate app layout to S6 Overlay~ (forked version already migrated it's layout)
 
 ## 11.0.0.2 (forked)
 
 ***BREAKING CHANGES:***
-- The `homeassistant` share has been renamed BACK to `config` (this will be the final name in the original add-on also)
+- The `homeassistant` share has been renamed BACK to `config` (this will be the final name in the original app also)
 
   ***Note:*** This fork doesn't drop temporarily the access to the `addon_configs` share until the new Supervisor release is out
 
 Nonbreaking changes:
-- Update Add-on base image to v14.3.2
+- Update App base image to v14.3.2
 
 ## 11.0.0.1 (forked)
 
 ***BREAKING CHANGES:***
 - Drop support for armhf & i386
-- In case of an empty list (`interfaces: []`, this is the default) Samba will run on localhost (127.0.0.1) only, and not on all interfaces. If you previously used the default settings, please list interfaces explicitly. This is due to the changes from the original add-on: localhost by default is added to the interfaces list (to support HEALTHCHECK), so we can't use Samba's default behaviour to run on all interfaces in case of an empty list (there is no empty list from now on).
-- Merge changes from original add-on
+- In case of an empty list (`interfaces: []`, this is the default) Samba will run on localhost (127.0.0.1) only, and not on all interfaces. If you previously used the default settings, please list interfaces explicitly. This is due to the changes from the original app: localhost by default is added to the interfaces list (to support HEALTHCHECK), so we can't use Samba's default behaviour to run on all interfaces in case of an empty list (there is no empty list from now on).
+- Merge changes from original app
   - The `config` share has been renamed to `homeassistant`
-  - The `addon_configs` share has been added to access public add-on configurations
+  - The `addon_configs` share has been added to access public app configurations
 
 Nonbreaking changes:
 - Update Samba to v4.18.8-r0
-- Update Add-on base image to v14.3.1
+- Update App base image to v14.3.1
 
 ## 11.0.0
 
 - The `config` share has been renamed to `homeassistant` to match upstream changes.
-- Add support for accessing public add-on configurations
+- Add support for accessing public app configurations
 - ~~Update to Alpine 3.18~~ (forked version already runs on Alpine 3.18)
 - Adds HEALTHCHECK support
 
 ## 10.0.2.3 (forked)
 
 - Update Samba to v4.18.5-r0
-- Update Add-on base image to v14.1.0 (Update Alpine base image to v3.18.3)
+- Update App base image to v14.1.0 (Update Alpine base image to v3.18.3)
 - Remove workaround for LOG_LEVEL environment variable superfluous newline character
 
 ## 10.0.2.2 (forked)
@@ -169,8 +185,8 @@ Nonbreaking changes:
 ## 10.0.2.1 (forked)
 
 - Update Samba to v4.18.4-r0
-- Update Add-on base image to v14.0.2
-- Sign add-on with Sigstore Cosign
+- Update App base image to v14.0.2
+- Sign app with Sigstore Cosign
 
 ## 10.0.2.0 (forked)
 
@@ -183,14 +199,14 @@ Nonbreaking changes:
 ## 10.0.1.1 (forked)
 
 - Update Samba to v4.18.2-r0
-- Update Add-on base image to v14 (Update Alpine base image to v3.18.0)
+- Update App base image to v14 (Update Alpine base image to v3.18.0)
 
 ## 10.0.1.0 (forked)
 
 - Make Samba log level configurable
 - In case of empty interface list use only notice log level, not warning
-- Migrate add-on layout to S6 Overlay
-- Update Add-on base image to v13.2.2
+- Migrate app layout to S6 Overlay
+- Update App base image to v13.2.2
 
 ## 10.0.1
 
@@ -218,7 +234,7 @@ BREAKING CHANGE: Don't mangle filenames
 
 By default, Samba mangles filenames with special characters to ensure
 compatibility with really old versions of Windows which have a very limited
-charset for filenames. The add-on no longer does this as modern operating
+charset for filenames. The app no longer does this as modern operating
 systems do not have these restrictions.
 
 - Don't mangle filenames (fixes #2541)
@@ -231,7 +247,7 @@ systems do not have these restrictions.
 ## 9.7.0
 
 - Upgrade Alpine Linux to 3.15
-- Sign add-on with Codenotary Community Attestation Service (CAS)
+- Sign app with Codenotary Community Attestation Service (CAS)
 
 ## 9.6.1.7 (forked)
 
@@ -279,7 +295,7 @@ systems do not have these restrictions.
 
 ## 9.5.1
 
-- Add `hassio_api` to add-on configuration
+- Add `hassio_api` to app configuration
 
 ## 9.5.0
 
@@ -303,7 +319,7 @@ systems do not have these restrictions.
 ## 9.2.0
 
 - Pin base image version
-- Rewrite add-on onto S6 Overlay
+- Rewrite app onto S6 Overlay
 - Use default configuration location
 - Add support for running in compatibility mode (SMB1/NT1)
 - Add dummy files to reduce number of errors/warnings in log output

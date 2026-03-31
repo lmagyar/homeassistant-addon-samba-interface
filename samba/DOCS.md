@@ -1,8 +1,8 @@
-# Home Assistant Custom Add-on: Samba share with features
+# Home Assistant Custom App: Samba share with features
 
 ![Warning][warning_stripe]
 
-> This is a **fork** of the [official add-on][official_addon]!
+> This is a **fork** of the [official app][official_app]!
 >
 > Changes:
 >   - Restore the possibility to specify `interfaces` in the configuration
@@ -17,7 +17,7 @@
 > **Note:** Please use `interfaces`, the plural form, with an _**S**_ at the
 > end.
 >
-> The official add-on in the past used a plain string and we were able to add
+> The official app in the past used a plain string and we were able to add
 > multiple interfaces separated with a space, but this forked version uses a
 > string list, because this is the way how we should specify multiple items, ie.
 > a list, like `veto_files` and `allow_hosts`.
@@ -32,20 +32,20 @@
 
 ![Warning][warning_stripe]
 
-This Add-on allows you to enable file sharing across different operating systems over a network.
+This App allows you to enable file sharing across different operating systems over a network.
 It lets you access your config files with Windows and macOS devices.
 
 ## Installation
 
-Follow these steps to get the add-on installed on your system:
+Follow these steps to get the app (formerly known as add-on) installed on your system:
 
-1. Navigate in your Home Assistant frontend to **Settings** -> **Add-ons** ->
-   **Add-on Store**.
+1. Navigate in your Home Assistant frontend to **Settings** > **Apps** >
+   **Install app**.
 1. In the **...** menu at the top right corner click **Repositories**, add
    `https://github.com/lmagyar/homeassistant-addon-samba-interface` as
    repository.
-1. Find the "Samba share with features" add-on and click it. If it doesn't show
-   up, wait until HA refreshes the information about the add-on, or click
+1. Find the "Samba share with features" app and click it. If it doesn't show
+   up, wait until HA refreshes the information about the app, or click
    **Check for updates** in the **...** menu at the top right corner.
 1. Click on the "INSTALL" button.
 
@@ -55,28 +55,28 @@ Follow these steps to get the add-on installed on your system:
    You can specify any username and password; these are not related in any way to the login credentials you use to log in to Home Assistant or to log in to the computer with which you will use Samba share.
 1. Review the enabled shares. Disable any you do not plan to use. Shares can be re-enabled later if needed.
 1. Save the configuration.
-1. Start the add-on.
-1. Check the add-on log output to see the result.
+1. Start the app.
+1. Check the app log output to see the result.
 
 ## Connection
 
 If you are on Windows you use `\\<IP_ADDRESS>\`, if you are on MacOS you use `smb://<IP_ADDRESS>` to connect to the shares.
 
-This addon exposes the following directories over smb (samba):
+This app exposes the following directories over smb (samba):
 
 Directory | Description
 -- | --
-`addons` | This is for your local add-ons.
-`addon_configs` | This is for the configuration files of your add-ons.
+`addons` | This is for your local apps.
+`addon_configs` | This is for the configuration files of your apps.
 `backup` | This is for your backups.
 `config` | This is for your Home Assistant configuration.
 `media` | This is for local media files.
-`share` | This is for your data that is shared between add-ons and Home Assistant.
+`share` | This is for your data that is shared between apps and Home Assistant.
 `ssl` | This is for your SSL certificates.
 
-## Add-on Configuration
+## App Configuration
 
-Example add-on configuration:
+Example app configuration:
 
 ```yaml
 workgroup: WORKGROUP
@@ -149,7 +149,7 @@ from littering the share with temporary hidden files
 ### Option: `compatibility_mode`
 
 Setting this option to `true` will enable old legacy Samba protocols
-on the Samba add-on. This might solve issues with some clients that cannot
+on the Samba app. This might solve issues with some clients that cannot
 handle the newer protocols, however, it lowers security. Only use this
 when you absolutely need it and understand the possible consequences.
 
@@ -181,9 +181,9 @@ You have several options to get them answered:
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://discord.gg/c5DvZ4e
+[discord]: https://www.home-assistant.io/join-chat
 [forum]: https://community.home-assistant.io
 [issue]: https://github.com/lmagyar/homeassistant-addon-samba-interface/issues
 [reddit]: https://reddit.com/r/homeassistant
 [warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/images/warning_stripe_wide.png
-[official_addon]: https://github.com/home-assistant/addons/tree/master/samba
+[official_app]: https://github.com/home-assistant/addons/tree/master/samba

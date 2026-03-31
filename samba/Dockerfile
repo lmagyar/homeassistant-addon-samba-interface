@@ -1,18 +1,18 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:18.2.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:20.0.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 # Environment variables
 ENV \
     LANG="C.UTF-8" \
-    # Add-on log format
+    # App log format
     LOG_FORMAT="{TIMESTAMP} {LEVEL}: {MESSAGE}" \
     LOG_TIMESTAMP="%Y-%m-%d %H:%M:%S"
 
 # Setup base
 RUN \
     apk add --no-cache \
-        samba=4.21.4-r4 \
+        samba=4.22.8-r0 \
     \
     && mkdir -p /var/lib/samba \
     && touch \
@@ -24,5 +24,5 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
-HEALTHCHECK \
+HEALTHCHECK --start-period=3s \
     CMD healthcheck

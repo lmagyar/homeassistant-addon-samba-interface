@@ -16,13 +16,13 @@ then
     printf "UNHEALTHY" > /var/run/s6/container_environment/LAST_REPORTED_HEALTH_STATE
   fi
   # Log it always
-  bashio::log.fatal "Add-on is unhealthy"
+  bashio::log.fatal "App is unhealthy"
   bashio::exit.nok
 else
   # Healthy
   if ! bashio::var.equals "${LAST_REPORTED_HEALTH_STATE-}" "HEALTHY"; then
     printf "HEALTHY" > /var/run/s6/container_environment/LAST_REPORTED_HEALTH_STATE
     # Log it only once
-    bashio::log.info "Add-on is healthy"
+    bashio::log.info "App is healthy"
   fi
 fi
