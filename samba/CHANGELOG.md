@@ -13,7 +13,7 @@
 ## 12.6.0
 
 - Do initial healthcheck after 3s to speedup startup
-~- Update base image to Alpine 3.23 (base image tag 3.23-2026.02.0)~ (forked version uses hassio-addons base images)
+- ~Update base image to Alpine 3.23 (base image tag 3.23-2026.02.0)~ (forked version uses hassio-addons base images)
 - Drop builds of unsupported architectures
 
 ## 12.5.4.2 (forked)
