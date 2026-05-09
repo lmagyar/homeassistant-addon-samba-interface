@@ -1,5 +1,9 @@
 # Changelog
 
+## vNext (forked)
+
+- Update App base image to v20.1.1
+
 ## 12.6.1.1 (forked)
 
 - Update samba to v4.22.8-r0
