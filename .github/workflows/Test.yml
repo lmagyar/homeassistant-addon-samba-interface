@@ -3,6 +3,9 @@ name: 'Test'
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Test build
@@ -13,6 +16,8 @@ jobs:
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v6
+      with:
+        persist-credentials: false
     - name: Test build
       uses: home-assistant/builder@2026.03.2
       with:
