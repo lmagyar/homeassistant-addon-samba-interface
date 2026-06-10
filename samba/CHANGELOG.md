@@ -3,7 +3,7 @@
 ## vNext (forked)
 
 - Update samba to v4.22.10-r0
-- Update App base image to v20.2.0
+- Update App base image to v21.0.0 (Update Alpine base image to v3.24.0)
 
 ## 12.6.1.1 (forked)
 
