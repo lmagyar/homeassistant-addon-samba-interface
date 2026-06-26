@@ -13,6 +13,7 @@ ENV \
 RUN \
     apk add --no-cache \
         samba=4.23.8-r0 \
+        wsdd=0.9-r0 \
     \
     && mkdir -p /var/lib/samba \
     && touch \
