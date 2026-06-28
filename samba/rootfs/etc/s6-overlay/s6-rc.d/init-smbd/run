@@ -10,6 +10,9 @@ declare samba_username
 declare -a interfaces=()
 export HOSTNAME
 
+# shellcheck disable=SC1091  # Sourced from container filesystem path at runtime.
+source /etc/s6-overlay/s6-rc.d/init-smbd/network-interfaces.sh
+
 # Check Login data
 if ! bashio::config.has_value 'username' || ! bashio::config.has_value 'password'; then
     bashio::exit.nok "Setting a username and password is required!"
@@ -26,15 +29,7 @@ fi
 bashio::log.info "Hostname: ${HOSTNAME}"
 
 # Determine interfaces list
-for interface in $(bashio::config 'interfaces'); do
-    if ! bashio::fs.file_exists "/sys/class/net/${interface}/operstate"; then
-        bashio::log.warning "Interface ${interface} doesn't exist, skipping it"
-    elif ! [[ "$(cat "/sys/class/net/${interface}/operstate")" =~ ^(up|unknown)$ ]]; then
-        bashio::log.warning "Interface ${interface} is disabled, skipping it"
-    else
-        interfaces+=("${interface}")
-    fi
-done
+get_enabled_interfaces interfaces
 if [ ${#interfaces[@]} -eq 0 ]; then
     bashio::log.notice "Interfaces: <empty list>"
     bashio::log.notice "Running on localhost only"

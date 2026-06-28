@@ -3,9 +3,7 @@
 
 # Redirect outputs to the log (&1 and &2 are not initialized by Docker)
 exec &> /proc/1/fd/1
-if [[ "${LOG_FD:-}" =~ ^[0-9]+$ ]]; then
-  eval "exec ${LOG_FD}>&1" || true
-fi
+bashio::log.reinitialize_output
 
 # LAST_REPORTED_HEALTH_STATE is in contenv at /var/run/s6/container_environment
 

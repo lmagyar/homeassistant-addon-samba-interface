@@ -1,5 +1,14 @@
 # Changelog
 
+## 12.7.0.1 (forked)
+
+- Update samba to v4.23.8-r0
+- Update App base image to v21.0.0 (Update Alpine base image to v3.24.0)
+
+## 12.7.0
+
+- Add Windows automatic discovery support with WSDD
+
 ## 12.6.1.1 (forked)
 
 - Update samba to v4.22.8-r0
