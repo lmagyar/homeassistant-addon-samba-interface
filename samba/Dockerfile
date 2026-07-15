@@ -27,3 +27,6 @@ COPY rootfs /
 
 HEALTHCHECK --start-period=3s \
     CMD healthcheck
+
+ENV \
+    S6_STAGE2_HOOK=/etc/s6-overlay/scripts/enable-check.sh
