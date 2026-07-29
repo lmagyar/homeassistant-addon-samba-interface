@@ -13,6 +13,7 @@
   canonical form in preparation for a stricter schema in a future release.
 
 ## 12.8.0
+
 - Add configuration option to disable NetBIOS. When disabled, the nmbd service is not started and only port 445 is allowed (port 139 is blocked.)
 
 ## 12.7.1.0 (forked)
