@@ -1,5 +1,9 @@
 # Changelog
 
+## vNext (forked)
+
+- Update App base image to v21.0.1
+
 ## 12.10.0
 
 - Rename the `addons` and `addon_configs` shares to `local_apps` and `app_configs` to match Home Assistant's app terminology. Existing `enabled_shares` configurations are migrated automatically on start (extending the lower-case normalization added in 12.8.1).
@@ -7,7 +11,7 @@
 - Log a warning when a client connects to a deprecated `addons`/`addon_configs` share, indicating which new share to switch to.
 - Exit cleanly with code 0 on shutdown instead of 143, so the Supervisor no longer warns about the add-on not handling `SIGTERM`.
 - Migrate to the new `local_apps` and `all_app_configs` folder mappings introduced in Home Assistant Supervisor.
-- Update base image to 3.24-2026.06.1
+- ~Update base image to 3.24-2026.06.1~ (forked version uses hassio-addons base images)
 
 ## 12.9.0
 
