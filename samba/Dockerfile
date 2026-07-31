@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:21.0.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:21.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -27,3 +27,6 @@ COPY rootfs /
 
 HEALTHCHECK --start-period=3s \
     CMD healthcheck
+
+ENV \
+    S6_STAGE2_HOOK=/etc/s6-overlay/scripts/enable-check.sh
