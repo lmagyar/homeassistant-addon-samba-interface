@@ -1,0 +1,8 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Mark that all other S6 services has already started
+# Required by finish script failure handling (halt or exit)
+# ==============================================================================
+
+touch /run/s6_has_started
