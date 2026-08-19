@@ -2,6 +2,7 @@
 
 ## vNext (forked)
 
+- Update App base image to v21.0.2
 - Properly handle failure during service startup
 
 ## 12.10.0.1 (forked)
