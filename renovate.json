@@ -44,6 +44,14 @@
       "automerge": true
     },
     {
+      "description": "Packages that live in the Alpine community repository",
+      "matchDatasources": ["custom.alpine"],
+      "matchPackageNames": ["alpine_3_24/wsdd"],
+      "registryUrls": [
+        "https://dl-cdn.alpinelinux.org/alpine/v3.24/community/x86_64/"
+      ]
+    },
+    {
       "groupName": "App base image",
       "matchDatasources": ["docker"]
     },
