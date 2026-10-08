@@ -1,5 +1,10 @@
 # Changelog
 
+## 12.10.0.2 (forked)
+
+- Update App base image to v21.0.8
+- Properly handle failure during service startup
+
 ## 12.10.0.1 (forked)
 
 - Update App base image to v21.0.1
