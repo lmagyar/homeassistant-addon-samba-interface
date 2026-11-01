@@ -3,6 +3,7 @@
 ## vNext (forked)
 
 - Update App base image to v21.0.10
+- Remove hardcoded service names, use argument value from s6
 
 ## 12.10.0.2 (forked)
 
