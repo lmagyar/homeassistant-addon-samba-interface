@@ -1,5 +1,9 @@
 # Changelog
 
+## vNext (forked)
+
+- Update App base image to v21.0.10
+
 ## 12.10.0.2 (forked)
 
 - Update App base image to v21.0.8
