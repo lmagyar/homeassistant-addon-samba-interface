@@ -4,6 +4,7 @@
 
 - Update App base image to v21.0.10
 - Remove hardcoded service names, use argument value from s6
+- Use a 5s startup healthcheck interval
 
 ## 12.10.0.2 (forked)
 

@@ -25,7 +25,7 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
-HEALTHCHECK --start-period=3s \
+HEALTHCHECK --start-period=30s --start-interval=5s --interval=30s \
     CMD healthcheck
 
 ENV \
