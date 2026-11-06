@@ -64,15 +64,15 @@ If you are on Windows you use `\\<IP_ADDRESS>\`, if you are on MacOS you use `sm
 
 This app exposes the following directories over smb (samba):
 
-Directory | Description
--- | --
-`local_apps` | This is for your local apps.
-`app_configs` | This is for the configuration files of your apps.
-`backup` | This is for your backups.
-`config` | This is for your Home Assistant configuration.
-`media` | This is for local media files.
-`share` | This is for your data that is shared between apps and Home Assistant.
-`ssl` | This is for your SSL certificates.
+| Directory     | Description                                                           |
+| ------------- | --------------------------------------------------------------------- |
+| `local_apps`  | This is for your local apps.                                          |
+| `app_configs` | This is for the configuration files of your apps.                     |
+| `backup`      | This is for your backups.                                             |
+| `config`      | This is for your Home Assistant configuration.                        |
+| `media`       | This is for local media files.                                        |
+| `share`       | This is for your data that is shared between apps and Home Assistant. |
+| `ssl`         | This is for your SSL certificates.                                    |
 
 The `local_apps` and `app_configs` shares were previously named `addons` and
 `addon_configs`. Existing configurations are migrated to the new names
