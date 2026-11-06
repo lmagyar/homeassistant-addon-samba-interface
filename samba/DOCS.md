@@ -218,4 +218,4 @@ In case you've found a bug, please [open an issue on our GitHub][issue].
 [issue]: https://github.com/lmagyar/homeassistant-addon-samba-interface/issues
 [reddit]: https://reddit.com/r/homeassistant
 [warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/images/warning_stripe_wide.png
-[official_app]: https://github.com/home-assistant/addons/tree/master/samba
+[official_app]: https://github.com/home-assistant/app-samba

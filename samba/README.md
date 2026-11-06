@@ -68,4 +68,4 @@ It lets you access your config files with Windows and macOS devices.
 [updated-shield]: https://img.shields.io/github/last-commit/lmagyar/homeassistant-addon-samba-interface/master?label=updated
 [updated]: https://github.com/lmagyar/homeassistant-addon-samba-interface/commits/master
 [warning_stripe]: https://github.com/lmagyar/homeassistant-addon-samba-interface/raw/master/images/warning_stripe_wide.png
-[official_app]: https://github.com/home-assistant/addons/tree/master/samba
+[official_app]: https://github.com/home-assistant/app-samba
