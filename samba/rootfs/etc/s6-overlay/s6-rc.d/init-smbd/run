@@ -86,9 +86,10 @@ if [[ "${config_username}" =~ [[:space:]] ]]; then
 fi
 
 jq --arg username "${samba_username}" \
-    ".interfaces = $(jq -c -n '$ARGS.positional' --args -- "${interfaces[@]}") |
+    --argjson interfaces "$(jq -c -n '$ARGS.positional' --args -- "${interfaces[@]}")" \
+    '.interfaces = $interfaces |
     .enabled_shares.[] |= ascii_downcase |
-    .username = \$username" /data/options.json \
+    .username = $username' /data/options.json \
     | tempio \
       -template /usr/share/tempio/smb.gtpl \
       -out /etc/samba/smb.conf
