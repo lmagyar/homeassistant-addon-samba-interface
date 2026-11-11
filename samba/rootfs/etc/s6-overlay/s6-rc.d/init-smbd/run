@@ -99,5 +99,5 @@ password=$(bashio::config 'password')
 addgroup "${username}"
 adduser -D -H -G "${username}" -s /bin/false "${username}"
 
-(echo "$password"; echo "$password") \
+printf '%s\n%s\n' "${password}" "${password}" \
     | smbpasswd -a -s -c "/etc/samba/smb.conf" "${username}"
