@@ -39,4 +39,5 @@ done
 bashio::log.info \
     "Starting the WSDD daemon on interfaces: ${interfaces[*]} for ${workgroup}/${hostname}"
 
-exec wsdd "${wsdd_interfaces[@]}" -n "${hostname}" -w "${workgroup}"
+# Log only level and message; the Supervisor adds the timestamp.
+exec wsdd --shortlog "${wsdd_interfaces[@]}" -n "${hostname}" -w "${workgroup}"
