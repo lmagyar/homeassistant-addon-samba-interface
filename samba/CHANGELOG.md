@@ -5,6 +5,12 @@
 - Update App base image to v21.0.12
 - Remove hardcoded service names, use argument value from s6
 - Use a 5s startup healthcheck interval
+- Merge changes from upstream
+  - Pass the password to smbpasswd with printf
+  - Keep the container exit code at 0 when nmbd or wsdd get SIGTERM
+  - Pass the interface list to jq as a variable
+  - Shorten the enabled_shares label and tidy DOCS.md
+  - Show timestamps in app logs by default
 
 ## 12.10.0.2 (forked)
 
